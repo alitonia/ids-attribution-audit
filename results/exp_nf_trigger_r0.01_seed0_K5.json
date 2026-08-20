@@ -1,0 +1,181 @@
+{
+  "dataset": "nf",
+  "attack": "trigger",
+  "ratio": 0.01,
+  "seed": 0,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 810594,
+  "n_poison": 8106,
+  "clean_f1": 0.9890072128112432,
+  "poison_meta": {
+    "attack_type": "trigger",
+    "ratio": 0.01,
+    "n_attacker_feats": 7
+  },
+  "metrics_poisoned": {
+    "tp": 141453,
+    "fp": 305,
+    "fn": 2479,
+    "tn": 29463,
+    "precision": 0.9978484459430861,
+    "recall": 0.9827765889447795,
+    "f1": 0.9902551716895935,
+    "acc": 0.9839723661485319,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.010245901639344262
+      },
+      "1": {
+        "n": 2549,
+        "recall": 0.9313456257355825
+      },
+      "2": {
+        "n": 69370,
+        "recall": 0.9908606025659507
+      },
+      "3": {
+        "n": 29655,
+        "recall": 0.962569549822964
+      },
+      "4": {
+        "n": 3041,
+        "recall": 0.9730351857941467
+      },
+      "5": {
+        "n": 21751,
+        "recall": 0.9898855225047124
+      },
+      "6": {
+        "n": 182,
+        "recall": 0.3516483516483517
+      },
+      "7": {
+        "n": 14861,
+        "recall": 0.9945494919588184
+      },
+      "8": {
+        "n": 2499,
+        "recall": 0.9859943977591037
+      },
+      "9": {
+        "n": 24,
+        "recall": 0.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.4831035761289176,
+      "precision_at_2x": 0.0,
+      "threshold": 0.17932788943305655,
+      "n_flagged": 1800,
+      "flag_precision": 0.0
+    },
+    "tracincp": {
+      "auroc": 0.8583141687186553,
+      "precision_at_2x": 0.0,
+      "threshold": 3280.4596118163845,
+      "n_flagged": 18783,
+      "flag_precision": 0.0
+    },
+    "random": {
+      "auroc": 0.4994497928122542,
+      "precision_at_2x": 0.01005428077966938,
+      "threshold": 0.9902043694460455,
+      "n_flagged": 8106,
+      "flag_precision": 0.009005674808783616
+    },
+    "loss_outlier": {
+      "auroc": 0.019204314490643696,
+      "precision_at_2x": 0.0,
+      "threshold": 1.0229125022888184,
+      "n_flagged": 7807,
+      "flag_precision": 0.0
+    },
+    "grad_norm": {
+      "auroc": 0.017012554347294987,
+      "precision_at_2x": 0.0,
+      "threshold": 205.54916381835938,
+      "n_flagged": 4240,
+      "flag_precision": 0.0
+    },
+    "activation_clustering": {
+      "auroc": 0.08149903799184537,
+      "precision_at_2x": 0.0,
+      "threshold": 0.900002977608385,
+      "n_flagged": 4,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 0.07000092995426249,
+      "n_flagged": 8106,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "tracincp",
+  "metrics_quarantined": {
+    "tp": 142239,
+    "fp": 3393,
+    "fn": 1693,
+    "tn": 26375,
+    "precision": 0.9767015491100857,
+    "recall": 0.9882375010421588,
+    "f1": 0.9824356618916716,
+    "acc": 0.970719631548647,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.1139814565976888
+      },
+      "1": {
+        "n": 2549,
+        "recall": 0.9976461357395057
+      },
+      "2": {
+        "n": 69370,
+        "recall": 0.993123828744414
+      },
+      "3": {
+        "n": 29655,
+        "recall": 0.9727870510875063
+      },
+      "4": {
+        "n": 3041,
+        "recall": 0.9855310753041763
+      },
+      "5": {
+        "n": 21751,
+        "recall": 0.9908509953565353
+      },
+      "6": {
+        "n": 182,
+        "recall": 0.6648351648351648
+      },
+      "7": {
+        "n": 14861,
+        "recall": 0.9964336181952762
+      },
+      "8": {
+        "n": 2499,
+        "recall": 0.9911964785914366
+      },
+      "9": {
+        "n": 24,
+        "recall": 0.0
+      }
+    }
+  },
+  "f1_recovery": 6.2658393105533365,
+  "n_quarantined": 18783,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "PASS->audit story"
+  }
+}

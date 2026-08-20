@@ -1,0 +1,10 @@
+{
+ "cell": "cic_label_flip_r0.05_seed0",
+ "effective_rank": 1.7999999523162842,
+ "auroc_std_whitening": 0.858,
+ "auroc_identity": 0.969,
+ "auroc_keep_top10": 0.986,
+ "auroc_keep_top64": 0.969,
+ "auroc_keep_top256": 0.969,
+ "minutes_total": 0.9
+}

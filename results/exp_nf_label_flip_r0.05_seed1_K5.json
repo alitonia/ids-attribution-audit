@@ -1,0 +1,181 @@
+{
+  "dataset": "nf",
+  "attack": "label_flip",
+  "ratio": 0.05,
+  "seed": 1,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 810594,
+  "n_poison": 40530,
+  "clean_f1": 0.9869796790241435,
+  "poison_meta": {
+    "attack_type": "label_flip",
+    "ratio": 0.05,
+    "n_poison_target": 40530
+  },
+  "metrics_poisoned": {
+    "tp": 137777,
+    "fp": 394,
+    "fn": 6155,
+    "tn": 29374,
+    "precision": 0.9971484609650361,
+    "recall": 0.9572367506878248,
+    "f1": 0.9767850749548923,
+    "acc": 0.9622970639032815,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.013235689330825046
+      },
+      "1": {
+        "n": 2602,
+        "recall": 0.3201383551114527
+      },
+      "2": {
+        "n": 69075,
+        "recall": 0.9906768005790807
+      },
+      "3": {
+        "n": 29499,
+        "recall": 0.8998271127834842
+      },
+      "4": {
+        "n": 3070,
+        "recall": 0.9107491856677524
+      },
+      "5": {
+        "n": 21818,
+        "recall": 0.9900540837840315
+      },
+      "6": {
+        "n": 191,
+        "recall": 0.43455497382198954
+      },
+      "7": {
+        "n": 15035,
+        "recall": 0.991420019953442
+      },
+      "8": {
+        "n": 2622,
+        "recall": 0.9851258581235698
+      },
+      "9": {
+        "n": 20,
+        "recall": 0.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.8251364026545168,
+      "precision_at_2x": 0.3740315815445349,
+      "threshold": 0.06687069077322963,
+      "n_flagged": 19206,
+      "flag_precision": 0.2237321670311361
+    },
+    "tracincp": {
+      "auroc": 0.9458064620307551,
+      "precision_at_2x": 0.47891685171477916,
+      "threshold": 2939.522705078125,
+      "n_flagged": 54237,
+      "flag_precision": 0.6473256264173903
+    },
+    "random": {
+      "auroc": 0.5006799791781111,
+      "precision_at_2x": 0.05003700962250185,
+      "threshold": 0.990036266000412,
+      "n_flagged": 8106,
+      "flag_precision": 0.050333086602516654
+    },
+    "loss_outlier": {
+      "auroc": 0.9845016026641422,
+      "precision_at_2x": 0.4922773254379472,
+      "threshold": 1.7252027988433838,
+      "n_flagged": 8099,
+      "flag_precision": 0.37646623039881466
+    },
+    "grad_norm": {
+      "auroc": 0.8200131493583914,
+      "precision_at_2x": 0.05798174191956575,
+      "threshold": 494.9672546386719,
+      "n_flagged": 4873,
+      "flag_precision": 0.33080238046378
+    },
+    "activation_clustering": {
+      "auroc": 0.09019574996363938,
+      "precision_at_2x": 0.0,
+      "threshold": 0.9047484750059416,
+      "n_flagged": 1,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 1.000000799677357,
+      "n_flagged": 8106,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "trak",
+  "metrics_quarantined": {
+    "tp": 139798,
+    "fp": 746,
+    "fn": 4134,
+    "tn": 29022,
+    "precision": 0.9946920537340619,
+    "recall": 0.9712781035488981,
+    "f1": 0.9828456530603635,
+    "acc": 0.9719055843408175,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.025060467616232197
+      },
+      "1": {
+        "n": 2602,
+        "recall": 0.9388931591083781
+      },
+      "2": {
+        "n": 69075,
+        "recall": 0.9918349619978285
+      },
+      "3": {
+        "n": 29499,
+        "recall": 0.9011491914980169
+      },
+      "4": {
+        "n": 3070,
+        "recall": 0.9824104234527687
+      },
+      "5": {
+        "n": 21818,
+        "recall": 0.991795764964708
+      },
+      "6": {
+        "n": 191,
+        "recall": 0.5235602094240838
+      },
+      "7": {
+        "n": 15035,
+        "recall": 0.9925507149983372
+      },
+      "8": {
+        "n": 2622,
+        "recall": 0.9839816933638444
+      },
+      "9": {
+        "n": 20,
+        "recall": 0.15
+      }
+    }
+  },
+  "f1_recovery": 0.5944888162700733,
+  "n_quarantined": 19206,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "PASS->audit story"
+  }
+}

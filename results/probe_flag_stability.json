@@ -1,0 +1,50 @@
+{
+ "cell": "cic_label_flip_r0.05_seed0",
+ "n_train": 313541,
+ "n_poison": 15677,
+ "variants": {
+  "A_p1024_s0": {
+   "proj_dim": 1024,
+   "projector_seed": 0,
+   "auroc": 0.10954482006162117,
+   "flag_precision": 0.26738794435857804,
+   "n_flagged": 2588,
+   "poison_recall_at_flags": 0.04414109842444345,
+   "minutes": 2.3
+  },
+  "B_p2048_s0": {
+   "proj_dim": 2048,
+   "projector_seed": 0,
+   "auroc": 0.4516993357528807,
+   "flag_precision": 0.37293729372937295,
+   "n_flagged": 2121,
+   "poison_recall_at_flags": 0.050456082158576256,
+   "minutes": 4.1
+  },
+  "C_p1024_s7": {
+   "proj_dim": 1024,
+   "projector_seed": 7,
+   "auroc": 0.7783919481447975,
+   "flag_precision": 0.4829514524669669,
+   "n_flagged": 20207,
+   "poison_recall_at_flags": 0.6225043056707278,
+   "minutes": 2.3
+  }
+ },
+ "cross_variant": {
+  "A_p1024_s0_vs_B_p2048_s0": {
+   "flag_agreement": 0.9910793165806067,
+   "poison_jaccard": 0.16679779701022818
+  },
+  "A_p1024_s0_vs_C_p1024_s7": {
+   "flag_agreement": 0.9297093522059316,
+   "poison_jaccard": 0.00907598725499662
+  },
+  "B_p2048_s0_vs_C_p1024_s7": {
+   "flag_agreement": 0.9335461709951809,
+   "poison_jaccard": 0.021297192642787996
+  }
+ },
+ "auroc_spread": 0.6688471280831764,
+ "minutes_total": 9.9
+}

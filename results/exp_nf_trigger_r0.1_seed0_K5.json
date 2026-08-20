@@ -1,0 +1,181 @@
+{
+  "dataset": "nf",
+  "attack": "trigger",
+  "ratio": 0.1,
+  "seed": 0,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 810594,
+  "n_poison": 81059,
+  "clean_f1": 0.9890072128112432,
+  "poison_meta": {
+    "attack_type": "trigger",
+    "ratio": 0.1,
+    "n_attacker_feats": 7
+  },
+  "metrics_poisoned": {
+    "tp": 142108,
+    "fp": 606,
+    "fn": 1824,
+    "tn": 29162,
+    "precision": 0.9957537452527433,
+    "recall": 0.9873273490259289,
+    "f1": 0.9915226446557774,
+    "acc": 0.9860103626943005,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.020357430798172534
+      },
+      "1": {
+        "n": 2549,
+        "recall": 0.934876422126324
+      },
+      "2": {
+        "n": 69370,
+        "recall": 0.9944932968141849
+      },
+      "3": {
+        "n": 29655,
+        "recall": 0.9701905243635137
+      },
+      "4": {
+        "n": 3041,
+        "recall": 0.9825715225254851
+      },
+      "5": {
+        "n": 21751,
+        "recall": 0.9932876649349455
+      },
+      "6": {
+        "n": 182,
+        "recall": 0.4945054945054945
+      },
+      "7": {
+        "n": 14861,
+        "recall": 0.9962317475270843
+      },
+      "8": {
+        "n": 2499,
+        "recall": 0.990796318527411
+      },
+      "9": {
+        "n": 24,
+        "recall": 0.08333333333333333
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.6543212748488689,
+      "precision_at_2x": 0.0,
+      "threshold": 0.17932788943305655,
+      "n_flagged": 338,
+      "flag_precision": 0.0
+    },
+    "tracincp": {
+      "auroc": 0.9390600711132874,
+      "precision_at_2x": 0.5,
+      "threshold": 3280.4596118163845,
+      "n_flagged": 9816,
+      "flag_precision": 0.0
+    },
+    "random": {
+      "auroc": 0.5006558668786273,
+      "precision_at_2x": 0.10020478910423272,
+      "threshold": 0.9902043694460455,
+      "n_flagged": 8106,
+      "flag_precision": 0.09918578830495929
+    },
+    "loss_outlier": {
+      "auroc": 0.005953210818905169,
+      "precision_at_2x": 0.0,
+      "threshold": 0.9051482081413269,
+      "n_flagged": 7974,
+      "flag_precision": 0.0
+    },
+    "grad_norm": {
+      "auroc": 0.004968498994989042,
+      "precision_at_2x": 0.0,
+      "threshold": 76.68836212158203,
+      "n_flagged": 6598,
+      "flag_precision": 0.0
+    },
+    "activation_clustering": {
+      "auroc": 0.03964785788207557,
+      "precision_at_2x": 0.0,
+      "threshold": 0.875733980466889,
+      "n_flagged": 6,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 1.000000900781288,
+      "n_flagged": 8106,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "trak",
+  "metrics_quarantined": {
+    "tp": 141368,
+    "fp": 494,
+    "fn": 2564,
+    "tn": 29274,
+    "precision": 0.9965177425949162,
+    "recall": 0.9821860322930273,
+    "f1": 0.9892999853041001,
+    "acc": 0.9823949337938975,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.016595001343724804
+      },
+      "1": {
+        "n": 2549,
+        "recall": 0.9191839937230286
+      },
+      "2": {
+        "n": 69370,
+        "recall": 0.9915813752342512
+      },
+      "3": {
+        "n": 29655,
+        "recall": 0.9596020907098297
+      },
+      "4": {
+        "n": 3041,
+        "recall": 0.9638276882604406
+      },
+      "5": {
+        "n": 21751,
+        "recall": 0.9882304261873017
+      },
+      "6": {
+        "n": 182,
+        "recall": 0.5274725274725275
+      },
+      "7": {
+        "n": 14861,
+        "recall": 0.9956934257452392
+      },
+      "8": {
+        "n": 2499,
+        "recall": 0.985594237695078
+      },
+      "9": {
+        "n": 24,
+        "recall": 0.0
+      }
+    }
+  },
+  "f1_recovery": 0.8836094511989536,
+  "n_quarantined": 338,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "MIDDLE->audit-comparison framing"
+  }
+}

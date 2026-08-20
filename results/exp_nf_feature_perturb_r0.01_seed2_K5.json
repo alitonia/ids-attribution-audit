@@ -1,0 +1,182 @@
+{
+  "dataset": "nf",
+  "attack": "feature_perturb",
+  "ratio": 0.01,
+  "seed": 2,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 810594,
+  "n_poison": 8106,
+  "clean_f1": 0.9823235530716795,
+  "poison_meta": {
+    "attack_type": "feature_perturb",
+    "ratio": 0.01,
+    "budget_std": 1.0,
+    "n_attacker_feats": 7
+  },
+  "metrics_poisoned": {
+    "tp": 141514,
+    "fp": 273,
+    "fn": 2418,
+    "tn": 29495,
+    "precision": 0.998074576653713,
+    "recall": 0.9832004001889781,
+    "f1": 0.990581655402686,
+    "acc": 0.9845077720207254,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.00917092179521634
+      },
+      "1": {
+        "n": 2547,
+        "recall": 0.9108755398508048
+      },
+      "2": {
+        "n": 68882,
+        "recall": 0.9913620394297494
+      },
+      "3": {
+        "n": 29546,
+        "recall": 0.9629391457388479
+      },
+      "4": {
+        "n": 3072,
+        "recall": 0.9759114583333334
+      },
+      "5": {
+        "n": 21952,
+        "recall": 0.9905247813411079
+      },
+      "6": {
+        "n": 201,
+        "recall": 0.5373134328358209
+      },
+      "7": {
+        "n": 15139,
+        "recall": 0.9949798533588744
+      },
+      "8": {
+        "n": 2578,
+        "recall": 0.9864235841737781
+      },
+      "9": {
+        "n": 15,
+        "recall": 0.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.5350381446196777,
+      "precision_at_2x": 0.014742166296570441,
+      "threshold": 0.23384917028362323,
+      "n_flagged": 1210,
+      "flag_precision": 0.06363636363636363
+    },
+    "tracincp": {
+      "auroc": 0.9083374553983644,
+      "precision_at_2x": 0.011102886750555145,
+      "threshold": 8850.9033203125,
+      "n_flagged": 15277,
+      "flag_precision": 0.009818681678339988
+    },
+    "random": {
+      "auroc": 0.4997524757896847,
+      "precision_at_2x": 0.010917838638045891,
+      "threshold": 0.9898580072882628,
+      "n_flagged": 8106,
+      "flag_precision": 0.010239328892178634
+    },
+    "loss_outlier": {
+      "auroc": 0.11889501706072107,
+      "precision_at_2x": 0.007833703429558352,
+      "threshold": 1.2715129852294922,
+      "n_flagged": 7775,
+      "flag_precision": 0.007588424437299035
+    },
+    "grad_norm": {
+      "auroc": 0.12515953714812958,
+      "precision_at_2x": 0.0040710584752035525,
+      "threshold": 208.86114501953125,
+      "n_flagged": 5835,
+      "flag_precision": 0.00908311910882605
+    },
+    "activation_clustering": {
+      "auroc": 0.08654833467914785,
+      "precision_at_2x": 0.0,
+      "threshold": 0.9081926054969001,
+      "n_flagged": 6,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 0.07000092996386004,
+      "n_flagged": 8106,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "tracincp",
+  "metrics_quarantined": {
+    "tp": 142608,
+    "fp": 3150,
+    "fn": 1324,
+    "tn": 26618,
+    "precision": 0.9783888362902894,
+    "recall": 0.9908012116832949,
+    "f1": 0.9845559045876626,
+    "acc": 0.9742429476108233,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.10581832840634238
+      },
+      "1": {
+        "n": 2547,
+        "recall": 0.9929328621908127
+      },
+      "2": {
+        "n": 68882,
+        "recall": 0.9933219128364449
+      },
+      "3": {
+        "n": 29546,
+        "recall": 0.985717186759629
+      },
+      "4": {
+        "n": 3072,
+        "recall": 0.986328125
+      },
+      "5": {
+        "n": 21952,
+        "recall": 0.9900236880466472
+      },
+      "6": {
+        "n": 201,
+        "recall": 0.6766169154228856
+      },
+      "7": {
+        "n": 15139,
+        "recall": 0.9959706717748861
+      },
+      "8": {
+        "n": 2578,
+        "recall": 0.9906904577191621
+      },
+      "9": {
+        "n": 15,
+        "recall": 0.13333333333333333
+      }
+    }
+  },
+  "f1_recovery": 0.729677421457788,
+  "n_quarantined": 15277,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "PASS->audit story"
+  }
+}

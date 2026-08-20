@@ -1,0 +1,181 @@
+{
+  "dataset": "cic",
+  "attack": "trigger",
+  "ratio": 0.05,
+  "seed": 1,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 313541,
+  "n_poison": 15677,
+  "clean_f1": 0.941032559812916,
+  "poison_meta": {
+    "attack_type": "trigger",
+    "ratio": 0.05,
+    "n_attacker_feats": 53
+  },
+  "metrics_poisoned": {
+    "tp": 13414,
+    "fp": 2654,
+    "fn": 23,
+    "tn": 51096,
+    "precision": 0.8348269853124222,
+    "recall": 0.9982883084021731,
+    "f1": 0.9092696153194374,
+    "acc": 0.9601559825561492,
+    "per_class_recall": {
+      "0": {
+        "n": 53750,
+        "recall": 0.04937674418604651
+      },
+      "1": {
+        "n": 48,
+        "recall": 1.0
+      },
+      "2": {
+        "n": 65,
+        "recall": 1.0
+      },
+      "3": {
+        "n": 657,
+        "recall": 0.9954337899543378
+      },
+      "4": {
+        "n": 4747,
+        "recall": 0.9991573625447651
+      },
+      "5": {
+        "n": 4340,
+        "recall": 0.997926267281106
+      },
+      "6": {
+        "n": 698,
+        "recall": 0.997134670487106
+      },
+      "7": {
+        "n": 2527,
+        "recall": 0.998417095370004
+      },
+      "8": {
+        "n": 314,
+        "recall": 0.9968152866242038
+      },
+      "9": {
+        "n": 41,
+        "recall": 1.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.5613675050910976,
+      "precision_at_2x": 0.0004465140014033297,
+      "threshold": 31.950536507319363,
+      "n_flagged": 1515,
+      "flag_precision": 0.005280528052805281
+    },
+    "tracincp": {
+      "auroc": 0.39606512369473984,
+      "precision_at_2x": 0.0019136314345856989,
+      "threshold": 99009.6703124994,
+      "n_flagged": 6914,
+      "flag_precision": 0.008388776395718832
+    },
+    "random": {
+      "auroc": 0.49788011018627404,
+      "precision_at_2x": 0.0489251770109077,
+      "threshold": 0.9900215800439247,
+      "n_flagged": 3136,
+      "flag_precision": 0.05006377551020408
+    },
+    "loss_outlier": {
+      "auroc": 0.3694784697626934,
+      "precision_at_2x": 0.001626586719397844,
+      "threshold": 3.1813914775848366,
+      "n_flagged": 3136,
+      "flag_precision": 0.0
+    },
+    "grad_norm": {
+      "auroc": 0.3566276370332087,
+      "precision_at_2x": 3.189385724309498e-05,
+      "threshold": 21.950110626220663,
+      "n_flagged": 3136,
+      "flag_precision": 0.0
+    },
+    "activation_clustering": {
+      "auroc": 0.5319776810893562,
+      "precision_at_2x": 0.0,
+      "threshold": 0.8262303055431524,
+      "n_flagged": 36,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 1.0000007967569562,
+      "n_flagged": 3136,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "tracincp",
+  "metrics_quarantined": {
+    "tp": 13205,
+    "fp": 1535,
+    "fn": 232,
+    "tn": 52215,
+    "precision": 0.8958616010854816,
+    "recall": 0.9827342412740939,
+    "f1": 0.9372892784895481,
+    "acc": 0.9737002693973537,
+    "per_class_recall": {
+      "0": {
+        "n": 53750,
+        "recall": 0.02855813953488372
+      },
+      "1": {
+        "n": 48,
+        "recall": 1.0
+      },
+      "2": {
+        "n": 65,
+        "recall": 1.0
+      },
+      "3": {
+        "n": 657,
+        "recall": 0.989345509893455
+      },
+      "4": {
+        "n": 4747,
+        "recall": 0.9844112070781547
+      },
+      "5": {
+        "n": 4340,
+        "recall": 0.9827188940092166
+      },
+      "6": {
+        "n": 698,
+        "recall": 0.8982808022922636
+      },
+      "7": {
+        "n": 2527,
+        "recall": 0.998021369212505
+      },
+      "8": {
+        "n": 314,
+        "recall": 1.0
+      },
+      "9": {
+        "n": 41,
+        "recall": 1.0
+      }
+    }
+  },
+  "f1_recovery": 0.8821494233906297,
+  "n_quarantined": 6914,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "FAIL->benchmark flavor, best auditor wins"
+  }
+}

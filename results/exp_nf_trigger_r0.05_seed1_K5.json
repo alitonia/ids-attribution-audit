@@ -1,0 +1,181 @@
+{
+  "dataset": "nf",
+  "attack": "trigger",
+  "ratio": 0.05,
+  "seed": 1,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 810594,
+  "n_poison": 40530,
+  "clean_f1": 0.9869796790241435,
+  "poison_meta": {
+    "attack_type": "trigger",
+    "ratio": 0.05,
+    "n_attacker_feats": 7
+  },
+  "metrics_poisoned": {
+    "tp": 140345,
+    "fp": 238,
+    "fn": 3587,
+    "tn": 29530,
+    "precision": 0.9983070499278006,
+    "recall": 0.9750785092960564,
+    "f1": 0.9865560691000475,
+    "acc": 0.977979274611399,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.007995162590701424
+      },
+      "1": {
+        "n": 2602,
+        "recall": 0.7782475019215987
+      },
+      "2": {
+        "n": 69075,
+        "recall": 0.9900108577633008
+      },
+      "3": {
+        "n": 29499,
+        "recall": 0.942370927828062
+      },
+      "4": {
+        "n": 3070,
+        "recall": 0.958957654723127
+      },
+      "5": {
+        "n": 21818,
+        "recall": 0.9907874232285269
+      },
+      "6": {
+        "n": 191,
+        "recall": 0.38219895287958117
+      },
+      "7": {
+        "n": 15035,
+        "recall": 0.9930162953109412
+      },
+      "8": {
+        "n": 2622,
+        "recall": 0.9809305873379099
+      },
+      "9": {
+        "n": 20,
+        "recall": 0.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.5726484110482091,
+      "precision_at_2x": 0.0,
+      "threshold": 0.06687069077322963,
+      "n_flagged": 15647,
+      "flag_precision": 0.0
+    },
+    "tracincp": {
+      "auroc": 0.8929808025235986,
+      "precision_at_2x": 0.011028867505551444,
+      "threshold": 2939.522705078125,
+      "n_flagged": 6600,
+      "flag_precision": 0.0
+    },
+    "random": {
+      "auroc": 0.5002436851618709,
+      "precision_at_2x": 0.05054280779669381,
+      "threshold": 0.990036266000412,
+      "n_flagged": 8106,
+      "flag_precision": 0.05094991364421416
+    },
+    "loss_outlier": {
+      "auroc": 0.008286324253568535,
+      "precision_at_2x": 0.0,
+      "threshold": 1.5587267875671387,
+      "n_flagged": 8104,
+      "flag_precision": 0.0
+    },
+    "grad_norm": {
+      "auroc": 0.007315891200153105,
+      "precision_at_2x": 0.0,
+      "threshold": 249.4439239501953,
+      "n_flagged": 7739,
+      "flag_precision": 0.0
+    },
+    "activation_clustering": {
+      "auroc": 0.06387391177876124,
+      "precision_at_2x": 0.0,
+      "threshold": 0.5079517031919962,
+      "n_flagged": 10,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 1.0000008008388617,
+      "n_flagged": 8106,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "tracincp",
+  "metrics_quarantined": {
+    "tp": 142481,
+    "fp": 1200,
+    "fn": 1451,
+    "tn": 28568,
+    "precision": 0.9916481650322589,
+    "recall": 0.989918850568324,
+    "f1": 0.9907827532135195,
+    "acc": 0.9847380541162924,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.040311744154797095
+      },
+      "1": {
+        "n": 2602,
+        "recall": 0.9980784012298232
+      },
+      "2": {
+        "n": 69075,
+        "recall": 0.9949330437929786
+      },
+      "3": {
+        "n": 29499,
+        "recall": 0.9758296891420049
+      },
+      "4": {
+        "n": 3070,
+        "recall": 0.9892508143322476
+      },
+      "5": {
+        "n": 21818,
+        "recall": 0.9917040975341461
+      },
+      "6": {
+        "n": 191,
+        "recall": 0.7958115183246073
+      },
+      "7": {
+        "n": 15035,
+        "recall": 0.9950781509810442
+      },
+      "8": {
+        "n": 2622,
+        "recall": 0.9851258581235698
+      },
+      "9": {
+        "n": 20,
+        "recall": 0.15
+      }
+    }
+  },
+  "f1_recovery": 9.97777406299266,
+  "n_quarantined": 6600,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "PASS->audit story"
+  }
+}

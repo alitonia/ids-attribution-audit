@@ -1,0 +1,181 @@
+{
+  "dataset": "nf",
+  "attack": "trigger",
+  "ratio": 0.05,
+  "seed": 2,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 810594,
+  "n_poison": 40530,
+  "clean_f1": 0.9823235530716795,
+  "poison_meta": {
+    "attack_type": "trigger",
+    "ratio": 0.05,
+    "n_attacker_feats": 7
+  },
+  "metrics_poisoned": {
+    "tp": 141763,
+    "fp": 413,
+    "fn": 2169,
+    "tn": 29355,
+    "precision": 0.997095149673644,
+    "recall": 0.9849303837923464,
+    "f1": 0.9909754358493996,
+    "acc": 0.9851352907311457,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.013873958613276002
+      },
+      "1": {
+        "n": 2547,
+        "recall": 0.9352179034157833
+      },
+      "2": {
+        "n": 68882,
+        "recall": 0.99224761185796
+      },
+      "3": {
+        "n": 29546,
+        "recall": 0.9655790970012861
+      },
+      "4": {
+        "n": 3072,
+        "recall": 0.9798177083333334
+      },
+      "5": {
+        "n": 21952,
+        "recall": 0.9918002915451894
+      },
+      "6": {
+        "n": 201,
+        "recall": 0.527363184079602
+      },
+      "7": {
+        "n": 15139,
+        "recall": 0.9955743444084814
+      },
+      "8": {
+        "n": 2578,
+        "recall": 0.9868114817688131
+      },
+      "9": {
+        "n": 15,
+        "recall": 0.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {},
+  "localization": {
+    "trak": {
+      "auroc": 0.38094931504810325,
+      "precision_at_2x": 0.0,
+      "threshold": 0.23384917028362323,
+      "n_flagged": 2189,
+      "flag_precision": 0.0
+    },
+    "tracincp": {
+      "auroc": 0.8800435561414778,
+      "precision_at_2x": 0.0,
+      "threshold": 8850.9033203125,
+      "n_flagged": 10139,
+      "flag_precision": 0.0
+    },
+    "random": {
+      "auroc": 0.4978300902513224,
+      "precision_at_2x": 0.04940784603997039,
+      "threshold": 0.9898580072882628,
+      "n_flagged": 8106,
+      "flag_precision": 0.05094991364421416
+    },
+    "loss_outlier": {
+      "auroc": 0.015114159387456515,
+      "precision_at_2x": 0.0,
+      "threshold": 1.2498707842826553,
+      "n_flagged": 8106,
+      "flag_precision": 0.0
+    },
+    "grad_norm": {
+      "auroc": 0.013776885836058335,
+      "precision_at_2x": 0.0,
+      "threshold": 196.21302795410156,
+      "n_flagged": 1609,
+      "flag_precision": 0.0
+    },
+    "activation_clustering": {
+      "auroc": 0.06387391177876124,
+      "precision_at_2x": 0.0,
+      "threshold": 0.9076911624583135,
+      "n_flagged": 10,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 1.0000007992401878,
+      "n_flagged": 8106,
+      "flag_precision": 1.0
+    }
+  },
+  "primary_method": "tracincp",
+  "metrics_quarantined": {
+    "tp": 141860,
+    "fp": 2762,
+    "fn": 2072,
+    "tn": 27006,
+    "precision": 0.9809019374645628,
+    "recall": 0.9856043131478753,
+    "f1": 0.9832475030670168,
+    "acc": 0.9721704087507196,
+    "per_class_recall": {
+      "0": {
+        "n": 29768,
+        "recall": 0.09278419779629132
+      },
+      "1": {
+        "n": 2547,
+        "recall": 0.9791912053396152
+      },
+      "2": {
+        "n": 68882,
+        "recall": 0.9916523910455561
+      },
+      "3": {
+        "n": 29546,
+        "recall": 0.9661544709943817
+      },
+      "4": {
+        "n": 3072,
+        "recall": 0.9866536458333334
+      },
+      "5": {
+        "n": 21952,
+        "recall": 0.9912536443148688
+      },
+      "6": {
+        "n": 201,
+        "recall": 0.527363184079602
+      },
+      "7": {
+        "n": 15139,
+        "recall": 0.9957064535306163
+      },
+      "8": {
+        "n": 2578,
+        "recall": 0.9848719937936384
+      },
+      "9": {
+        "n": 15,
+        "recall": 0.2
+      }
+    }
+  },
+  "f1_recovery": 0.8932082161680922,
+  "n_quarantined": 10139,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "PASS->audit story"
+  }
+}

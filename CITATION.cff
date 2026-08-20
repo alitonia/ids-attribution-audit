@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Auditing Poisoned Training Data for Intrusion Detection Systems: An Influence-Based Attribution Approach for IoT Network Security (artifact)"
+message: >-
+  If you use this software or data, please cite the paper below.
+type: software
+authors:
+  - family-names: Hoang
+    given-names: Nguyen Huy
+    affiliation: Hanoi University of Science and Technology
+identifiers:
+  - description: Zenodo DOI of this release (fill after minting)
+    type: doi
+    value: 10.5281/zenodo.TBD
+repository-code: https://github.com/alitonia/ids-attribution-audit
+version: v1.0.0
+date-released: "2026-08-21"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Auditing Poisoned Training Data for Intrusion Detection Systems: An Influence-Based Attribution Approach for IoT Network Security"
+  authors:
+    - family-names: Hoang
+      given-names: Nguyen Huy
+  conference:
+    name: RIVF 2026 (20th International Conference on Computing and Communication Technologies)
+  year: 2026
