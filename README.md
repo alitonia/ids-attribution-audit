@@ -1,5 +1,8 @@
 # Auditing Poisoned Training Data for Intrusion Detection Systems
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22035732.svg)](https://doi.org/10.5281/zenodo.22035732)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Artifact repository for the paper *"Auditing Poisoned Training Data for
 Intrusion Detection Systems: An Influence-Based Attribution Approach for IoT
 Network Security"* (Nguyen Huy Hoang, Hanoi University of Science and
