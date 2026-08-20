@@ -8,9 +8,9 @@ authors:
     given-names: Nguyen Huy
     affiliation: Hanoi University of Science and Technology
 identifiers:
-  - description: Zenodo DOI of this release (fill after minting)
+  - description: Zenodo DOI of this release
     type: doi
-    value: 10.5281/zenodo.TBD
+    value: 10.5281/zenodo.22035732
 repository-code: https://github.com/alitonia/ids-attribution-audit
 version: v1.0.0
 date-released: "2026-08-21"
