@@ -42,7 +42,12 @@ def set_determinism(seed: int) -> None:
     torch.manual_seed(seed)
     np.random.seed(seed)
     torch.set_num_threads(config.TORCH_THREADS)
-    torch.use_deterministic_algorithms(False)  # keep True-off: scatter ops in BCE paths
+    if config.DETERMINISTIC:
+        # best-effort kernel determinism (warn_only: BCE-path scatter ops
+        # would hard-error otherwise); CUBLAS workspace pinned in config
+        torch.use_deterministic_algorithms(True, warn_only=True)
+    else:
+        torch.use_deterministic_algorithms(False)
 
 
 def train(X_train: np.ndarray, y_train: np.ndarray, X_val: np.ndarray,

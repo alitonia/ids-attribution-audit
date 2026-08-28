@@ -14,11 +14,13 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import time as _time
 import numpy as np
 import torch
 from pathlib import Path
 
 from . import config
+from . import manifest
 from .data import (load_cic_unsw_nb15, load_nf_toniot, load_ciciot2023,
                    load_multiclass, stratified_split, Standardizer)
 from .poison import apply_poison, classify_features
@@ -26,10 +28,28 @@ from .train import MLP, set_determinism, train
 from .score import trak_scores, tracincp_scores
 from .baselines import (random_scores, loss_outlier_scores, grad_norm_scores,
                         activation_clustering_scores, oracle_scores)
+from .certify_rs import certify_dual, certified_accuracy_dual
 from .evaluate import (localization_auroc, precision_at_k, calibrate_threshold,
                        flag_flows, binary_metrics, per_class_recall, f1_recovery,
                        gate_status, save_result)
 from .train import set_determinism as _sd  # noqa: F401  (re-export for clarity)
+
+RS_R_GRID = (0.0, 0.25, 0.5, 0.75, 1.0)
+
+
+def _rs_block(ckpt_path: Path, Xte: np.ndarray, yte: np.ndarray,
+              seed: int, device) -> dict | None:
+    """Dual-bound (Wald + exact CP) certified accuracy per class/radius."""
+    try:
+        cert = certify_dual(MLP, ckpt_path, Xte, sigma=0.5, n_samples=200,
+                            seed=seed)
+    except Exception as e:  # keep the cell alive; record the failure
+        return {"error": f"{type(e).__name__}: {e}"}
+    out = {}
+    for c in np.unique(yte):
+        out[str(int(c))] = {f"r>={r}": certified_accuracy_dual(
+            cert, yte, float(r), class_of_interest=int(c)) for r in RS_R_GRID}
+    return out
 
 
 def _load(dataset: str):
@@ -115,6 +135,7 @@ def _get_clean_null(dataset: str, seed: int, k: int, smoke: bool,
 
 def run(dataset: str, attack: str, ratio: float, seed: int, k: int, smoke: bool, methods: tuple, device: str | torch.device | None = None, loaded_data=None) -> dict:
     # resolve once; every train/eval/scoring call below runs on this device
+    t0 = _time.time()
     device = torch.device(device) if device is not None else config.resolve_device()
     set_determinism(seed)
     if loaded_data is not None:
@@ -160,9 +181,15 @@ def run(dataset: str, attack: str, ratio: float, seed: int, k: int, smoke: bool,
         ttargets = yte[t_sel]
         _get_clean_null(dataset, seed, k, smoke, methods, _ckpts(tag_clean, seed, k),
                         Xtr, ytr, targets, ttargets, device)
-        save_result(config.RESULTS_DIR /
-                    f"exp_{dataset}_none_seed{seed}_K{k}{'_smoke' if smoke else ''}.json",
-                    result)
+        if not smoke:
+            result["rs_cert"] = {"model": "clean",
+                                 "classes": _rs_block(_ckpts(tag_clean, seed, k)[-1],
+                                                      Xte, yte, seed, device)}
+        out_c = config.RESULTS_DIR / \
+            f"exp_{dataset}_none_seed{seed}_K{k}{'_smoke' if smoke else ''}.json"
+        save_result(out_c, result)
+        manifest.record_cell(f"{dataset}_none_seed{seed}", out_c,
+                             _ckpts(tag_clean, seed, k), _time.time() - t0)
         return result
 
     # 2. poison the training split
@@ -241,25 +268,86 @@ def run(dataset: str, attack: str, ratio: float, seed: int, k: int, smoke: bool,
             if flagged.any() else 0.0,
         }
 
+    # 4b. two-sided flagging, held-out calibration, score diagnostics (v2)
+    rng_h = np.random.default_rng(seed + 777)
+    result["two_sided"] = {}
+    result["threshold_heldout"] = {}
+    result["score_diagnostics"] = {}
+    for m in ("trak", "tracincp"):
+        if m not in suspicion or m not in clean_null:
+            continue
+        null_s = SUSPICION_SIGN.get(m, 1.0) * np.asarray(clean_null[m], dtype=np.float64)
+        s = np.asarray(suspicion[m], dtype=np.float64)
+        lo = float(np.quantile(null_s, config.FPR_TARGET / 2))
+        hi = float(np.quantile(null_s, 1 - config.FPR_TARGET / 2))
+        f2 = (s > hi) | (s < lo)
+        lo_f, hi_f = s < lo, s > hi
+        result["two_sided"][m] = {
+            "tau_lo": lo, "tau_hi": hi,
+            "n_flagged": int(f2.sum()),
+            "flag_precision": float(pr.poison_mask[f2].mean()) if f2.any() else 0.0,
+            "lo_tail": {"n": int(lo_f.sum()),
+                        "precision": float(pr.poison_mask[lo_f].mean()) if lo_f.any() else 0.0},
+            "hi_tail": {"n": int(hi_f.sum()),
+                        "precision": float(pr.poison_mask[hi_f].mean()) if hi_f.any() else 0.0},
+        }
+        perm = rng_h.permutation(len(null_s))
+        half_a, half_b = null_s[perm[: len(perm) // 2]], null_s[perm[len(perm) // 2:]]
+        tau_h = float(np.quantile(half_a, 1 - config.FPR_TARGET))
+        fpr_b = float((half_b > tau_h).mean())
+        fh = s > tau_h
+        result["threshold_heldout"][m] = {
+            "tau": tau_h, "empirical_fpr_half_b": fpr_b,
+            "n_flagged": int(fh.sum()),
+            "flag_precision": float(pr.poison_mask[fh].mean()) if fh.any() else 0.0,
+        }
+        q = [0.005, 0.01, 0.25, 0.5, 0.75, 0.99, 0.995]
+        result["score_diagnostics"][m] = {
+            "null_quantiles": {str(kk): float(v) for kk, v in zip(q, np.quantile(null_s, q))},
+            "run_quantiles": {str(kk): float(v) for kk, v in zip(q, np.quantile(s, q))},
+            "flag_rate": float(flag_flows(s, result["localization"][m]["threshold"]).mean()),
+        }
+
     trak_auroc = result["localization"].get("trak", {}).get("auroc", float("nan"))
     primary = ("trak" if trak_auroc == trak_auroc and trak_auroc >= config.GATE_G2_SMOKE_AUROC
                and "trak" in suspicion else
                "tracincp" if "tracincp" in suspicion else
                max(result["localization"], key=lambda k: result["localization"][k]["auroc"]))
     result["primary_method"] = primary
-    if primary in suspicion:
-        tau = result["localization"][primary]["threshold"]
-        keep = ~flag_flows(suspicion[primary], tau)
-        tag_quar = f"{tag_poison}_quar"
+    ck_quar_all: list[Path] = []
+
+    def _quarantine(method_key: str, tag_suffix: str) -> None:
+        tau_q = result["localization"][method_key]["threshold"]
+        keep = ~flag_flows(suspicion[method_key], tau_q)
+        tag_quar = f"{tag_poison}{tag_suffix}"
         if not _ckpts(tag_quar, seed, k):
             train(pr.X[keep], pr.y[keep], Xs[split["val"]], y[split["val"]],
                   seed=seed, k_checkpoints=k, tag=tag_quar, device=device)
-        quar_metrics = _eval_model(tag_quar, seed, k, Xte, yte, ym_te,
-                                   device=device)
-        result["metrics_quarantined"] = quar_metrics
-        result["f1_recovery"] = f1_recovery(poisoned_metrics["f1"],
-                                            quar_metrics["f1"], clean_metrics["f1"])
-        result["n_quarantined"] = int((~keep).sum())
+        qm = _eval_model(tag_quar, seed, k, Xte, yte, ym_te, device=device)
+        result[f"metrics_quarantined_{method_key}"] = qm
+        result[f"f1_recovery_{method_key}"] = f1_recovery(
+            poisoned_metrics["f1"], qm["f1"], clean_metrics["f1"])
+        result[f"n_quarantined_{method_key}"] = int((~keep).sum())
+        ck_quar_all.extend(_ckpts(tag_quar, seed, k))
+
+    # pure-TracInCP quarantine: the paper's headline protocol (single attributor)
+    if "tracincp" in suspicion:
+        _quarantine("tracincp", "_quarT")
+        if not smoke:
+            result["rs_cert"] = {
+                "model": "tracincp_quarantine",
+                "classes": _rs_block(_ckpts(f"{tag_poison}_quarT", seed, k)[-1],
+                                     Xte, yte, seed, device)}
+
+    # gated-primary quarantine: recorded as the secondary variant; when the
+    # gate already picks tracincp, alias instead of retraining
+    if primary in suspicion:
+        if primary == "tracincp":
+            result["metrics_quarantined"] = result["metrics_quarantined_tracincp"]
+            result["f1_recovery"] = result["f1_recovery_tracincp"]
+            result["n_quarantined"] = result["n_quarantined_tracincp"]
+        else:
+            _quarantine(primary, "_quar")
 
     # 5. gates
     smoke_auroc = result["localization"].get(primary, {}).get("auroc", float("nan"))
@@ -269,6 +357,9 @@ def run(dataset: str, attack: str, ratio: float, seed: int, k: int, smoke: bool,
     out = config.RESULTS_DIR / \
         f"exp_{dataset}_{attack}_r{ratio:g}_seed{seed}_K{k}{'_smoke' if smoke else ''}.json"
     save_result(out, result)
+    ck_all = _ckpts(tag_poison, seed, k) + _ckpts(tag_clean, seed, k) + ck_quar_all
+    manifest.record_cell(f"{dataset}_{attack}_r{ratio:g}_seed{seed}", out,
+                         ck_all, _time.time() - t0)
     print(f"wrote {out}")
     return result
 

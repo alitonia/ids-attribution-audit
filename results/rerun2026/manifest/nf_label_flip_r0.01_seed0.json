@@ -1,0 +1,100 @@
+{
+  "cell": "nf_label_flip_r0.01_seed0",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "1152727cc7f93b8a7d577f33ac97a0e99aa7b638",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "6bb3b9f60ff8"
+  },
+  "when": "2026-08-28T10:24:04.502984+00:00",
+  "wall_s": 530.6,
+  "result": {
+    "path": "/workspace/results_rerun/exp_nf_label_flip_r0.01_seed0_K5.json",
+    "sha256": "f5c15f27e8ec5dcf73e553b95dacbab97258cb6b856adc63e26fab57edcd386b"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed0_K5/ckpt_0.pt",
+      "sha256": "966bd3c73765056a2d25b93adcd37c6900d75ec1fd58b223feb359d6ac022e1c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed0_K5/ckpt_1.pt",
+      "sha256": "ff16cbbc8a264a59dc5a8b7f0714a235e633705c044767d3e0cc6b0c441a04c1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed0_K5/ckpt_2.pt",
+      "sha256": "eb5722c7c33aa0ee26e0b2f807b7d403a27778e709d085cafb59da1a36aa8855"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed0_K5/ckpt_3.pt",
+      "sha256": "5dd5a6bc2c35c2673d1feb4ba2c0758ecd9b2bec94347172b53dc524cc2a4fd5"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed0_K5/ckpt_4.pt",
+      "sha256": "c3da04377c14386fd7874da02ed608e834aea3961dded0940425fe20d93dc69e"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quarT_seed0_K5/ckpt_0.pt",
+      "sha256": "4efb1b57f6ed6b5fe5141540ea3dd3b191da052f9b5fdfdb317c274d865ff06a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quarT_seed0_K5/ckpt_1.pt",
+      "sha256": "91c7eed9458a8c9305aace49d7d189dda3a0ad41aa9a06cb6dc11c2c4c5f7144"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quarT_seed0_K5/ckpt_2.pt",
+      "sha256": "dd271373a69b42e26cea5c54e5de263f32af9a46e865509af2902d487c6d5188"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quarT_seed0_K5/ckpt_3.pt",
+      "sha256": "35b327f4950df0dfef9a49e63faf8647fc2d21afe19506d977edf99117871f7b"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quarT_seed0_K5/ckpt_4.pt",
+      "sha256": "cf98ac516f05f0d47ab91a274f5f10005559d5f818b2cf001a3efc8f6c49ffbb"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quar_seed0_K5/ckpt_0.pt",
+      "sha256": "b6cea3fcfca3de9ace333025f975a2ba443c303dd0e23f4292c2a6d7597122cf"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quar_seed0_K5/ckpt_1.pt",
+      "sha256": "72318dc7dedbe81cd22834f57d8367851c33d372726908a57b0d3a780bb02f22"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quar_seed0_K5/ckpt_2.pt",
+      "sha256": "2a171f2599eaac5a6ca49a95de2913be1a9570a1e90d05da4b477c568dd3806e"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quar_seed0_K5/ckpt_3.pt",
+      "sha256": "42bee4d03e902b8011b6ca776b5ba215806244920a019d8d52a5eacfd7fb1941"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_quar_seed0_K5/ckpt_4.pt",
+      "sha256": "be043dff410e3444ee7d5e917643fa81bfcae2ab4b46da8fab452bd765bd5fd9"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_seed0_K5/ckpt_0.pt",
+      "sha256": "574d2dc877f4d85e92082614262a046b5782356bd037113f102887da5e3170af"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_seed0_K5/ckpt_1.pt",
+      "sha256": "1c8a652135948fc6ec6b3993852caca32504e6910e682e20f544d2f61493a56e"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_seed0_K5/ckpt_2.pt",
+      "sha256": "64062f1e39455e392e3d4ed690963b9fe8dabe1014c6f3efc413a088cd33d225"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_seed0_K5/ckpt_3.pt",
+      "sha256": "39e2ae897d4e574e60d9095707f5ec5556838513fa298161f94f77ccbcc4cb35"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.01_seed0_K5/ckpt_4.pt",
+      "sha256": "8147e3fa7ef9d7f0d1443cca49bdc2577dd5b7653315b9c35b5fc016c5905f28"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+\begin{table*}[tbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\caption{Localization AUROC by method, averaged over all attacks, ratios, and seeds (5 seeds). Oracle = planted-poison ground truth. TRAK values are single projection/instance draws and are projection-sensitive on these data (Section~\ref{sec:guarantee}, Remark); TracInCP, which uses no random projection, is the headline attributor.}
+\label{tab:baselines}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Dataset & TRAK & TracInCP & Loss & GradNorm & Act.Clust & Random & Oracle \\
+\midrule
+CIC-UNSW-NB15 & 0.511 & 0.756 & 0.647 & 0.646 & 0.526 & 0.498 & 1.000 & 1.000 \\
+NF-ToN-IoT & 0.631 & 0.905 & 0.372 & 0.321 & 0.082 & 0.500 & 1.000 & 1.000 \\
+CICIoT2023 & 0.628 & 0.908 & 0.504 & 0.490 & 0.891 & 0.500 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

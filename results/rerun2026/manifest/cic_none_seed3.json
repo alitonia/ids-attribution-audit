@@ -1,0 +1,40 @@
+{
+  "cell": "cic_none_seed3",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T10:17:35.209912+00:00",
+  "wall_s": 3.4,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_none_seed3_K5.json",
+    "sha256": "3a993254aaf7c070327131a7bd3f2b85e391c656425ebfbdbc28f10dcbbd3cab"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_0.pt",
+      "sha256": "ae4af4d534e80cde68dc34fa5e24f56532987477ddab1703231cb0973fac14f4"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_1.pt",
+      "sha256": "775ba9be78f4d067bbcfd9dddcc451220290975e050ba7d89c5b93a06d21c850"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_2.pt",
+      "sha256": "447a1379bef7e7eba5e67c592c1e8fc1bfa6f0a5d0f2f07eee7162f1b3503804"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_3.pt",
+      "sha256": "09084e80dd1cd150b8ce0c75a0453e2e968432a05a5c91c1b6e19f0aa451444f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_4.pt",
+      "sha256": "95316b783e8b5425044787f95e665bc90d6d62577c47531dae91e8bdf164ee1d"
+    }
+  ]
+}

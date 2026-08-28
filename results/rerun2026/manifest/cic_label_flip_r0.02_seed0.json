@@ -1,0 +1,100 @@
+{
+  "cell": "cic_label_flip_r0.02_seed0",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T09:52:11.035728+00:00",
+  "wall_s": 213.0,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_label_flip_r0.02_seed0_K5.json",
+    "sha256": "64ca08875ef686aaa9848d71ea690da384dba07b405ba4891bec390e74e602b4"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_0.pt",
+      "sha256": "29688694811aa7800ba2bcbc370e6896046c4d46ea1b77e2ff51c90c71ee053a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_1.pt",
+      "sha256": "28d99cda8aacfbba0c060444a9322b487a5216e1de228cccb8ecb6e8f6e62489"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_2.pt",
+      "sha256": "0a324422579aa17371cee3513a8250f2f78b9d5762f653c9aaed535aa6448c32"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_3.pt",
+      "sha256": "f826fc973787036ab0388a68cf697c3727435225d3da94971296dd5e1161e237"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_4.pt",
+      "sha256": "714f8dd4e96e872bed4f9f65d5f55bd31e8532023d6568be492af1fa83ebabe1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed0_K5/ckpt_0.pt",
+      "sha256": "8daefe34b56dd02c9431974f64806a1e0c3f3f5bf47a835ce795c27eedd7b238"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed0_K5/ckpt_1.pt",
+      "sha256": "e270971e297a8c6fd6aeeb83be98a22acdb4c301948968b90cf595f22b736fff"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed0_K5/ckpt_2.pt",
+      "sha256": "05a4d613ef93ec6ce2378c131d259592470765517239ce24310b987973bf134c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed0_K5/ckpt_3.pt",
+      "sha256": "a443b0c0c09cd6a535749b13974f00db92d160b64da03a83ca316296af685f00"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed0_K5/ckpt_4.pt",
+      "sha256": "7b4748bddcfd70b2a7cf01523c968ef6957d64734b287e6ac1e149cd24ad0c3d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed0_K5/ckpt_0.pt",
+      "sha256": "b8aa6b0f7ea80b419b225775e386520c4c94f35ea1a7eaa7f91c2074b9b20671"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed0_K5/ckpt_1.pt",
+      "sha256": "948e6ea3891ddd2a42564c5e16d1bb26a134b3894734547eb4a9028ff2de04b5"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed0_K5/ckpt_2.pt",
+      "sha256": "2b728573b1c3d537ab2d31ca0496221713cb8e320884db1d25045ecc3e6adf8b"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed0_K5/ckpt_3.pt",
+      "sha256": "951955c47e222b2bd69d72b4a41534f7d8a49dd040b0d5ecb7d47166888d1608"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed0_K5/ckpt_4.pt",
+      "sha256": "dbc250a9a3f8d23175f9526e334d04d004e54ef2d4ca8e75b296981df7aefef6"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed0_K5/ckpt_0.pt",
+      "sha256": "0fca241d0c0fecb326c351e5125b647cf85b40a3c80d5d846e822c634bc9337a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed0_K5/ckpt_1.pt",
+      "sha256": "6ece71b654e7728d2ab56bff63f16543e6ff4ff2c7e132c5c8aefdb4af1c7117"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed0_K5/ckpt_2.pt",
+      "sha256": "0bf28a1b539f7bf1fec25cc49c7bf0fa4dba360bd05514df3418511ed98ff9bc"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed0_K5/ckpt_3.pt",
+      "sha256": "28e3c9a82b4a3658cca959b881e54543f6bd1afe8fc1b12a18c009086f8cdabc"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed0_K5/ckpt_4.pt",
+      "sha256": "85ffcaacbbaf21fe10805e4559674206fa9aba451e7e9226f08bc82e658ed786"
+    }
+  ]
+}

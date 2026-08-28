@@ -1,0 +1,327 @@
+{
+  "dataset": "cic",
+  "attack": "trigger",
+  "ratio": 0.1,
+  "seed": 3,
+  "k_checkpoints": 5,
+  "smoke": false,
+  "device": "cuda",
+  "n_train": 313541,
+  "n_poison": 31354,
+  "clean_f1": 0.9438210329448999,
+  "poison_meta": {
+    "attack_type": "trigger",
+    "ratio": 0.1,
+    "n_attacker_feats": 53
+  },
+  "metrics_poisoned": {
+    "tp": 13423,
+    "fp": 2688,
+    "fn": 14,
+    "tn": 51062,
+    "precision": 0.8331574700515176,
+    "recall": 0.9989581007665401,
+    "f1": 0.9085555705969948,
+    "acc": 0.9597838867638084,
+    "per_class_recall": {
+      "0": {
+        "n": 53750,
+        "recall": 0.050009302325581394
+      },
+      "1": {
+        "n": 48,
+        "recall": 1.0
+      },
+      "2": {
+        "n": 59,
+        "recall": 1.0
+      },
+      "3": {
+        "n": 670,
+        "recall": 0.9985074626865672
+      },
+      "4": {
+        "n": 4652,
+        "recall": 0.999140154772141
+      },
+      "5": {
+        "n": 4419,
+        "recall": 0.9984159312061552
+      },
+      "6": {
+        "n": 727,
+        "recall": 1.0
+      },
+      "7": {
+        "n": 2537,
+        "recall": 0.9996058336618053
+      },
+      "8": {
+        "n": 289,
+        "recall": 0.9965397923875432
+      },
+      "9": {
+        "n": 36,
+        "recall": 1.0
+      }
+    }
+  },
+  "target_mode": "attack_only(2000)",
+  "errors": {
+    "trak": "OutOfMemoryError: CUDA out of memory. Tried to allocate 570.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 515.12 MiB is free. Process 1268416 has 3.60 GiB memory in use. Process 1268446 has 4.12 GiB memory in use. Process 1268462 has 2.97 GiB memory in use. Process 1268459 has 4.04 GiB memory in use. Process 1268432 has 4.28 GiB memory in use. Process 1268460 has 3.96 GiB memory in use. Of the allocated memory 2.58 GiB is allocated by PyTorch, with 16.00 MiB allocated in private pools (e.g., CUDA Graphs), and 375.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+  },
+  "localization": {
+    "tracincp": {
+      "auroc": 0.2686676218466277,
+      "precision_at_2x": 0.0024877208649614086,
+      "threshold": 22905069.999999978,
+      "n_flagged": 625,
+      "flag_precision": 0.08
+    },
+    "random": {
+      "auroc": 0.5002635852617152,
+      "precision_at_2x": 0.10065701345920776,
+      "threshold": 0.9898135525819011,
+      "n_flagged": 3136,
+      "flag_precision": 0.10204081632653061
+    },
+    "loss_outlier": {
+      "auroc": 0.319583595055755,
+      "precision_at_2x": 0.001626586719397844,
+      "threshold": 3.198383045196523,
+      "n_flagged": 3136,
+      "flag_precision": 0.0
+    },
+    "grad_norm": {
+      "auroc": 0.3046420871480329,
+      "precision_at_2x": 0.001626586719397844,
+      "threshold": 19.98805770874021,
+      "n_flagged": 3136,
+      "flag_precision": 0.00031887755102040814
+    },
+    "activation_clustering": {
+      "auroc": 0.5451349636942878,
+      "precision_at_2x": 0.06351661669962365,
+      "threshold": 0.8716591184537859,
+      "n_flagged": 2530,
+      "flag_precision": 0.0
+    },
+    "oracle": {
+      "auroc": 1.0,
+      "precision_at_2x": 0.5,
+      "threshold": 1.0000009017570286,
+      "n_flagged": 3136,
+      "flag_precision": 1.0
+    }
+  },
+  "two_sided": {
+    "tracincp": {
+      "tau_lo": -92451.0078125,
+      "tau_hi": 23509056.6,
+      "n_flagged": 5298,
+      "flag_precision": 0.009437523593808984,
+      "lo_tail": {
+        "n": 4674,
+        "precision": 0.0
+      },
+      "hi_tail": {
+        "n": 624,
+        "precision": 0.08012820512820513
+      }
+    }
+  },
+  "threshold_heldout": {
+    "tracincp": {
+      "tau": 22960730.639999997,
+      "empirical_fpr_half_b": 0.009542581217189403,
+      "n_flagged": 625,
+      "flag_precision": 0.08
+    }
+  },
+  "score_diagnostics": {
+    "tracincp": {
+      "null_quantiles": {
+        "0.005": -92451.0078125,
+        "0.01": -43865.694531249996,
+        "0.25": 493.9989929199219,
+        "0.5": 3256.5908203125,
+        "0.75": 5379.40576171875,
+        "0.99": 22905069.999999978,
+        "0.995": 23509056.6
+      },
+      "run_quantiles": {
+        "0.005": -214176.07499999998,
+        "0.01": -107062.16875,
+        "0.25": 224.1724090576172,
+        "0.5": 20717.02734375,
+        "0.75": 59184.6953125,
+        "0.99": 866465.6624999939,
+        "0.995": 1644517.5249999752
+      },
+      "flag_rate": 0.0019933597201004017
+    }
+  },
+  "primary_method": "tracincp",
+  "metrics_quarantined_tracincp": {
+    "tp": 13234,
+    "fp": 1253,
+    "fn": 203,
+    "tn": 52497,
+    "precision": 0.9135086629391869,
+    "recall": 0.9848924611148322,
+    "f1": 0.9478584729981379,
+    "acc": 0.978329141054073,
+    "per_class_recall": {
+      "0": {
+        "n": 53750,
+        "recall": 0.023311627906976745
+      },
+      "1": {
+        "n": 48,
+        "recall": 1.0
+      },
+      "2": {
+        "n": 59,
+        "recall": 0.9830508474576272
+      },
+      "3": {
+        "n": 670,
+        "recall": 0.9940298507462687
+      },
+      "4": {
+        "n": 4652,
+        "recall": 0.9858125537403267
+      },
+      "5": {
+        "n": 4419,
+        "recall": 0.980764878931885
+      },
+      "6": {
+        "n": 727,
+        "recall": 0.9477303988995873
+      },
+      "7": {
+        "n": 2537,
+        "recall": 0.997240835632637
+      },
+      "8": {
+        "n": 289,
+        "recall": 0.9965397923875432
+      },
+      "9": {
+        "n": 36,
+        "recall": 0.9722222222222222
+      }
+    }
+  },
+  "f1_recovery_tracincp": 1.1144870869239503,
+  "n_quarantined_tracincp": 625,
+  "rs_cert": {
+    "model": "tracincp_quarantine",
+    "classes": {
+      "0": {
+        "r>=0.0": {
+          "wald": 0.9733209302325582,
+          "exact": 0.9733209302325582
+        },
+        "r>=0.25": {
+          "wald": 0.9722232558139535,
+          "exact": 0.9722232558139535
+        },
+        "r>=0.5": {
+          "wald": 0.9710883720930232,
+          "exact": 0.9709209302325581
+        },
+        "r>=0.75": {
+          "wald": 0.9677395348837209,
+          "exact": 0.9662139534883721
+        },
+        "r>=1.0": {
+          "wald": 0.9497302325581395,
+          "exact": 0.9408744186046512
+        }
+      },
+      "1": {
+        "r>=0.0": {
+          "wald": 0.9863064672173848,
+          "exact": 0.9863064672173848
+        },
+        "r>=0.25": {
+          "wald": 0.9517749497655726,
+          "exact": 0.9483515665699189
+        },
+        "r>=0.5": {
+          "wald": 0.8634367790429411,
+          "exact": 0.8565900126516336
+        },
+        "r>=0.75": {
+          "wald": 0.7754707151894024,
+          "exact": 0.7635632953784327
+        },
+        "r>=1.0": {
+          "wald": 0.7067797871548709,
+          "exact": 0.6930118329984372
+        }
+      }
+    },
+    "patched": true
+  },
+  "metrics_quarantined": {
+    "tp": 13234,
+    "fp": 1253,
+    "fn": 203,
+    "tn": 52497,
+    "precision": 0.9135086629391869,
+    "recall": 0.9848924611148322,
+    "f1": 0.9478584729981379,
+    "acc": 0.978329141054073,
+    "per_class_recall": {
+      "0": {
+        "n": 53750,
+        "recall": 0.023311627906976745
+      },
+      "1": {
+        "n": 48,
+        "recall": 1.0
+      },
+      "2": {
+        "n": 59,
+        "recall": 0.9830508474576272
+      },
+      "3": {
+        "n": 670,
+        "recall": 0.9940298507462687
+      },
+      "4": {
+        "n": 4652,
+        "recall": 0.9858125537403267
+      },
+      "5": {
+        "n": 4419,
+        "recall": 0.980764878931885
+      },
+      "6": {
+        "n": 727,
+        "recall": 0.9477303988995873
+      },
+      "7": {
+        "n": 2537,
+        "recall": 0.997240835632637
+      },
+      "8": {
+        "n": 289,
+        "recall": 0.9965397923875432
+      },
+      "9": {
+        "n": 36,
+        "recall": 0.9722222222222222
+      }
+    }
+  },
+  "f1_recovery": 1.1144870869239503,
+  "n_quarantined": 625,
+  "gates": {
+    "G2_smoke": "PASS",
+    "G3_full": "FAIL->benchmark flavor, best auditor wins"
+  }
+}

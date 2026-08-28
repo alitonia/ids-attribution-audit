@@ -1,0 +1,100 @@
+{
+  "cell": "cic_label_flip_r0.05_seed4",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T09:57:58.770839+00:00",
+  "wall_s": 159.9,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_label_flip_r0.05_seed4_K5.json",
+    "sha256": "0a01dec86b54b0ef8680086d6b80b5a9e3708a1ce401269e02767ddf37bacddf"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_0.pt",
+      "sha256": "ef5cdfae33cb8339039a13678424843287505e378c65eed9ef27f11a5b0d7c57"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_1.pt",
+      "sha256": "b992d99ee073cc45d2df44ce9ddd69c63335f9fa1850b029a4e6a482165f3e01"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_2.pt",
+      "sha256": "ba1abd6a76b225198ca55aecc91405a5459c9e32f364e55352dd94aab2e74dce"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_3.pt",
+      "sha256": "89bbb530915c9de13c7db2e8cfac57aa7c85784cfa8ee0ed72e02144f8f641c1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_4.pt",
+      "sha256": "c898ee7acde2c2c49975aa545d6e7d8fb079f5b17180c26a842db5e0736bf947"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quarT_seed4_K5/ckpt_0.pt",
+      "sha256": "ad1eb6e70c492220f64d0006c0e3acbaa35101394721740e41f4d15fdf36ff39"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quarT_seed4_K5/ckpt_1.pt",
+      "sha256": "b39120247175bcf84c9d11f64cdbd7d2add9aa44adfe07c8c0d847603c57bae2"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quarT_seed4_K5/ckpt_2.pt",
+      "sha256": "73692973e73c372bc2160cd01e92fc29071b8c1da8b440e37c0da3d8aa721b26"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quarT_seed4_K5/ckpt_3.pt",
+      "sha256": "060be199bb91c29c178383cd9a3ed8ea36e9ec2c2a928543df4460673dd6120b"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quarT_seed4_K5/ckpt_4.pt",
+      "sha256": "d54cb33f679cb1c9b7298eb56e9082b8533d6a0dc2002ba456c93151e98305e3"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quar_seed4_K5/ckpt_0.pt",
+      "sha256": "626bdcaf3a7318bb7d525576ec2fb21bfd4a07d31cb6f45e8cb5630017bdc4db"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quar_seed4_K5/ckpt_1.pt",
+      "sha256": "7f038f2d44fa1df27593bf773627cb71c24b9fdd904f0a95f8575f1d7bd069fb"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quar_seed4_K5/ckpt_2.pt",
+      "sha256": "2759f2fe9348b9b7d98fc3d694fe5e30b9473af1312ad37ed962fb092b69969f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quar_seed4_K5/ckpt_3.pt",
+      "sha256": "35c57a0efb7900bf4bf7637badabae5639f8aeb123a898fdb3f4f1f7d8c9f595"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_quar_seed4_K5/ckpt_4.pt",
+      "sha256": "839a0fe6ffeaf210d140fbcc9aaeeb5cc99066ec84f1c860cd275ce560fbee1a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_seed4_K5/ckpt_0.pt",
+      "sha256": "8ce02f86ad87ef37a1d861f8d68fd10636703e346643ab1bbfe4f9eee2189add"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_seed4_K5/ckpt_1.pt",
+      "sha256": "fb923f055671baba97884d24b5e199d344a8c2f7028fdd96bbb9a6eb37bd41cc"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_seed4_K5/ckpt_2.pt",
+      "sha256": "8dea15a323013015a2eea19ed487df62e41e8603aefa420d2b981042d89095a3"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_seed4_K5/ckpt_3.pt",
+      "sha256": "f03cdd9374176a6316251face508f1be6480e9d15df202b67b3b2e53a232bab9"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.05_seed4_K5/ckpt_4.pt",
+      "sha256": "8d7284dcef68ab644393516dfe5d7b888a70e72483dd04d36761f86383417911"
+    }
+  ]
+}

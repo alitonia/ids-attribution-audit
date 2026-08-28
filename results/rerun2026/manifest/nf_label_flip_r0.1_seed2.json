@@ -1,0 +1,100 @@
+{
+  "cell": "nf_label_flip_r0.1_seed2",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "1152727cc7f93b8a7d577f33ac97a0e99aa7b638",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "6bb3b9f60ff8"
+  },
+  "when": "2026-08-28T10:45:52.721294+00:00",
+  "wall_s": 601.9,
+  "result": {
+    "path": "/workspace/results_rerun/exp_nf_label_flip_r0.1_seed2_K5.json",
+    "sha256": "45e37220ce623b45d70808981fffd08d9d31b4a68267583d9d3154b36e4acef1"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed2_K5/ckpt_0.pt",
+      "sha256": "878bea8c269750fa063f5a105a96ccf8f7024ba873de7e07c2b94a5168ab170d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed2_K5/ckpt_1.pt",
+      "sha256": "1fea216e72d0fc345a8f37167dd21eb9bf375e77010e8c108688230b1dafb384"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed2_K5/ckpt_2.pt",
+      "sha256": "7de9a1109834e15b54bb8bbdb7c853625df40d4905964bf26dd237e72c361ef5"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed2_K5/ckpt_3.pt",
+      "sha256": "332cd1d30097f2e94b5539384d694a4604e6f059b5bdd86b3e480b8c6341f416"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed2_K5/ckpt_4.pt",
+      "sha256": "1fc751fc63fcc1490ae4accd8282f596e7d3c601125fa376e3e938e1903eb9ca"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quarT_seed2_K5/ckpt_0.pt",
+      "sha256": "66915cbc13391d9fe29e06dc8727f99787c5d7648074193a01279a72ada7e282"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quarT_seed2_K5/ckpt_1.pt",
+      "sha256": "533834c4dd365ae538418a5e391391bb72efaa2d3e64da1d8095850189854ea5"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quarT_seed2_K5/ckpt_2.pt",
+      "sha256": "f72c96c834957f63b72816642184f47695cb6aa4485c79130858a50b44cef348"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quarT_seed2_K5/ckpt_3.pt",
+      "sha256": "61fb9629caee2aea1121da93aae3596870efb07e1a01975fe16fdae768c0ff81"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quarT_seed2_K5/ckpt_4.pt",
+      "sha256": "a0d84f1939636b6df7eac252b3420e5fc820c2f7014ed25ef5f87a8f4bf8afaf"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quar_seed2_K5/ckpt_0.pt",
+      "sha256": "4be969e906495d89dbff903852d4c05bd47f6d36e181cf5055e62266fef2be1e"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quar_seed2_K5/ckpt_1.pt",
+      "sha256": "925ddf9b7108f3d154ec3a448e849e73ee0a1779ec972c6d135936906f8e8895"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quar_seed2_K5/ckpt_2.pt",
+      "sha256": "e23c08bb19e076293bb7832fecdeeb314ca0e7471b1d859a70fedd70d9d3857c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quar_seed2_K5/ckpt_3.pt",
+      "sha256": "af5fcb8eef06331b3eb2bef9c8e9aab8f8141f664d5a2a570923c16b040eacb1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_quar_seed2_K5/ckpt_4.pt",
+      "sha256": "5dc1fefa26db94be3ba6f82dad8a368ede6a8952f1a6b76122f76839c9b22f85"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_seed2_K5/ckpt_0.pt",
+      "sha256": "e14d1b6e7ed635dd49fe680338ce898a0b952b285126eeebe657284b6419c02d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_seed2_K5/ckpt_1.pt",
+      "sha256": "87e0bd5db1bb8cd8f2103b2832a909a4ccd01be935d81bde185437342b9ce8e7"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_seed2_K5/ckpt_2.pt",
+      "sha256": "506eafc36162349fde4df93304f6844656d531620b4e895ed31a803fbba3dd85"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_seed2_K5/ckpt_3.pt",
+      "sha256": "7fed4520e189e37e24918f424a7b6883701d69df529caa1c33a6e3ca585401dd"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_label_flip_r0.1_seed2_K5/ckpt_4.pt",
+      "sha256": "98265674f3bc6121cfb44945c051761736627bc2ebd246009080f8c9b9e7efcc"
+    }
+  ]
+}

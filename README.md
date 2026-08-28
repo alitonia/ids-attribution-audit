@@ -50,3 +50,17 @@ sigma=0.5, N=200).
 
 Code and results: MIT (see LICENSE). Datasets remain under their original
 licenses and citation requirements (see `data/README.md`).
+
+
+## v1.1.0 (2026-08-28) — rerun2026 generation
+
+Results regenerated as a single verified generation: 195 cells (5 seeds, was 3),
+pure-TracInCP quarantine protocol, exact Clopper-Pearson bounds for the
+randomized-smoothing certificates, two-sided flagging and held-out calibration
+validation recorded per cell, and a sha256 evidence manifest covering every
+result JSON and all 2,300 checkpoints (`results/rerun2026/EVIDENCE_MANIFEST.json`,
+verifiable via `scripts/verify_evidence.py` after extracting the checkpoint
+archives from the release assets). v1.0.0 numbers are preserved under
+`results/v1.0.0/`. Headline deltas vs v1.0.0: fp AUROC floor 0.836->0.835,
+a partial threshold collapse at rho=5% (previously only at 10%), two-sided
+trigger flagging does not recover the family (0.004), held-out FPR <= 1.04%.

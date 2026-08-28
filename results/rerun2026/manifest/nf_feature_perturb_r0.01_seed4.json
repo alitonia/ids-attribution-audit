@@ -1,0 +1,100 @@
+{
+  "cell": "nf_feature_perturb_r0.01_seed4",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "1152727cc7f93b8a7d577f33ac97a0e99aa7b638",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "6bb3b9f60ff8"
+  },
+  "when": "2026-08-28T11:18:49.807970+00:00",
+  "wall_s": 331.7,
+  "result": {
+    "path": "/workspace/results_rerun/exp_nf_feature_perturb_r0.01_seed4_K5.json",
+    "sha256": "ac096702c6736bee8206fd5674de4d7bd32ee7e6c959e7930c5a3badee53375d"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed4_K5/ckpt_0.pt",
+      "sha256": "e64472f9021b8a402658a9577325c806004a29a77fe638ef319b85a35574f4c1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed4_K5/ckpt_1.pt",
+      "sha256": "cc3bbe1f1f59dfbd1ca2ed2bd98efb451912a988ffacdeb3d9804717988beb3c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed4_K5/ckpt_2.pt",
+      "sha256": "6f3e362a45848a5f50660d757e973d3298b834761e3da651c6923a5ced91107f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed4_K5/ckpt_3.pt",
+      "sha256": "c7e64b65983c0c150bccdd2564b41789c6a942380d8ef25db4c551431d50711f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_clean_seed4_K5/ckpt_4.pt",
+      "sha256": "01f73f72d2da8a23fb533def877d2c59cb37e54565c4f9dc61c7e03abf6fcba1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quarT_seed4_K5/ckpt_0.pt",
+      "sha256": "ea137bd1b15e17c1ad8a0331f2486b4ffce6587fd5d787f18716461aee9907da"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quarT_seed4_K5/ckpt_1.pt",
+      "sha256": "a56d111950cccfab3b21ce815696d276d6aa86f064b459e697d148f67d867e32"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quarT_seed4_K5/ckpt_2.pt",
+      "sha256": "ece0d36e7caba8fd148c00db62bd419ecb0ffcde652bb2f7781fa5402fe9c4b2"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quarT_seed4_K5/ckpt_3.pt",
+      "sha256": "12d1188139fc9227625e757ca556c8259e8bdbd6fdeb308dd772115a42084616"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quarT_seed4_K5/ckpt_4.pt",
+      "sha256": "26dfe820404eaa5b404068d3052522855bd44606297e8b5fd7f4180cb054a4bb"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quar_seed4_K5/ckpt_0.pt",
+      "sha256": "877521c90587681b2ad5845630377867f614c9f368155303441f91d30024d9c9"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quar_seed4_K5/ckpt_1.pt",
+      "sha256": "1c4acd119e8a9f5565eee5ce07904c2368a6048b89eb5a30b480688520e56cd2"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quar_seed4_K5/ckpt_2.pt",
+      "sha256": "29c20981b299fb746452129567eef7c0cffd641399f52582ec06d16da63569b4"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quar_seed4_K5/ckpt_3.pt",
+      "sha256": "9b629da75d3370b535480e88f8121d2d357f5441a4d5b8e80acf72ba14eeaa0c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_quar_seed4_K5/ckpt_4.pt",
+      "sha256": "4cb777293b398f7ca502c133aaefcab912d4859413bb4c34e840db14f7007bba"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_seed4_K5/ckpt_0.pt",
+      "sha256": "91dedf905d20e635f1a7cbeb4598fda6cdf53d3fc8962bddb88d950683f27504"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_seed4_K5/ckpt_1.pt",
+      "sha256": "08faf8b6724f0829742c3be26e4fbd903b7a48741414a0d2b3b7332da7cc5049"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_seed4_K5/ckpt_2.pt",
+      "sha256": "d8221f6b886c4f594bebbf1c3657d795700021084b2ed7809a601b2c3f478615"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_seed4_K5/ckpt_3.pt",
+      "sha256": "44943cdd93bd54ff41fcb00e7e52d956391256bb38d67dd1075790ac64035597"
+    },
+    {
+      "path": "/workspace/ckpt_v2/nf_feature_perturb_r0.01_seed4_K5/ckpt_4.pt",
+      "sha256": "9b9888b9daee2ddee1bc13afdb324df80a9b37fe025a50b28fd1f426ac4cb5ef"
+    }
+  ]
+}

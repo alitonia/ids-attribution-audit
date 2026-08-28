@@ -13,9 +13,21 @@ torch.backends.cudnn.allow_tf32 = True
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
-PROCESSED_DIR = DATA_DIR / "processed"
-RESULTS_DIR = ROOT / "results"
-CKPT_DIR = PROCESSED_DIR / "checkpoints"
+# S1_PROCESSED_DIR scopes the null-score caches (and any other generated
+# artifacts) per generation — mixing a stale null cache with new checkpoints
+# is exactly the provenance failure the 2026-08-28 re-run eliminates.
+PROCESSED_DIR = Path(os.environ.get("S1_PROCESSED_DIR", str(DATA_DIR / "processed")))
+RESULTS_DIR = Path(os.environ.get("S1_RESULTS_DIR", str(ROOT / "results")))
+CKPT_DIR = Path(os.environ.get("S1_CKPT_DIR", str(PROCESSED_DIR / "checkpoints")))
+
+# --- rerun generation (2026-08-28) -------------------------------------------
+# S1_RUN_ID stamps the evidence manifest; S1_DETERMINISTIC=1 pins CUBLAS
+# workspace + best-effort deterministic kernels (warn_only — BCE scatter ops
+# are not deterministic-safe to hard-error on).
+RUN_ID = os.environ.get("S1_RUN_ID", "")
+DETERMINISTIC = os.environ.get("S1_DETERMINISTIC", "0") == "1"
+if DETERMINISTIC:
+    os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
 
 # --- determinism -------------------------------------------------------------
 SEEDS = list(range(30))          # final campaign; smoke runs use SEEDS[:3]

@@ -1,0 +1,100 @@
+{
+  "cell": "ciciot2023_label_flip_r0.05_seed3",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T10:53:20.540547+00:00",
+  "wall_s": 407.5,
+  "result": {
+    "path": "/workspace/results_rerun/exp_ciciot2023_label_flip_r0.05_seed3_K5.json",
+    "sha256": "70bf43771ebf6f444d965e76987b459f10b98e29966869b3c2a8e07208cc76f7"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_clean_seed3_K5/ckpt_0.pt",
+      "sha256": "bba9499590947cf0138d57362ea4b1e8107d9a03f054a6d41dc10bc5795c0b51"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_clean_seed3_K5/ckpt_1.pt",
+      "sha256": "b2f12b3036a1f9e7dc146437f97c1c6a3113538c0b0b73d04063a32e58fa1492"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_clean_seed3_K5/ckpt_2.pt",
+      "sha256": "ce975de9e2316275b4f6499bd2ce25ebf37581fcecc33cc5122511b121728858"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_clean_seed3_K5/ckpt_3.pt",
+      "sha256": "3f4050b01dd1e409fe35f7d78f463d530dcb39c4bbf56fb80952ce21921fe454"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_clean_seed3_K5/ckpt_4.pt",
+      "sha256": "372a25e756faeb06fa05bdd62c35719ce42abb994a4e4e774630ba2360d52d3d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quarT_seed3_K5/ckpt_0.pt",
+      "sha256": "82d1dd35f29d524e50b3c8302c857a8a193f6d4cd4695404253188f72eb3b9e6"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quarT_seed3_K5/ckpt_1.pt",
+      "sha256": "1ae7b0dd9c6245b273f6f2ff386b3abbc9e400682e531e24c5f9534971290c85"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quarT_seed3_K5/ckpt_2.pt",
+      "sha256": "b806cd11a9e0aa8fae0803599bcc40310e5a35437fd73c5607ce0e8933b2687d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quarT_seed3_K5/ckpt_3.pt",
+      "sha256": "8e03571debb75160fa7455efc9b9c2cc18e1f343b69408433d03dbf2ca7a9727"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quarT_seed3_K5/ckpt_4.pt",
+      "sha256": "9453a93644634093dfbd7f9f851aad75b6431e752cc0c2a479e8c28e093d82ac"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quar_seed3_K5/ckpt_0.pt",
+      "sha256": "e30a758cba6f896a3b12af42ab241384a3a73f1fe48d9b5f41c51629245df7d3"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quar_seed3_K5/ckpt_1.pt",
+      "sha256": "1baf511372f9d26253876df957a681a3b905b930b66d4932ba3918d405bc9dcc"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quar_seed3_K5/ckpt_2.pt",
+      "sha256": "fbca3176427af4b0b4f46c80f7a8347c6dd3b4ebf512193f176eb08774b35d6f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quar_seed3_K5/ckpt_3.pt",
+      "sha256": "a54330fe068bd9b3da67357981277faea3ec26e9e9e436236a657088b5231651"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_quar_seed3_K5/ckpt_4.pt",
+      "sha256": "24144ca3858140d29a67d35f4e0b582beaaa3f9658572beff62eddbb6b64d9db"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_seed3_K5/ckpt_0.pt",
+      "sha256": "8e62e1a444f7f9709434fb108a670fbec93da82c31a1fff0ee8f81cd0f3ca478"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_seed3_K5/ckpt_1.pt",
+      "sha256": "9b39647f8bda0d28dd70e24ad913090f36be35ab5589505041cf9ddf556aef8b"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_seed3_K5/ckpt_2.pt",
+      "sha256": "d86659c1fe692855ff92a92315db1a6ee79c8c1b9466bfcfdcb139dbbd5871cf"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_seed3_K5/ckpt_3.pt",
+      "sha256": "37e8b5c49eef32a9fd35aa6e01757eb60491a5e3c942ef9846b02266820c842f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/ciciot2023_label_flip_r0.05_seed3_K5/ckpt_4.pt",
+      "sha256": "e2507701bed912b6019038f16c391fd4bc17ad543d6f4b6688eb0e6271e27f36"
+    }
+  ]
+}

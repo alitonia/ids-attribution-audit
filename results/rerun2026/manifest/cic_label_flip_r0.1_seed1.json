@@ -1,0 +1,100 @@
+{
+  "cell": "cic_label_flip_r0.1_seed1",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T09:54:18.943557+00:00",
+  "wall_s": 159.2,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_label_flip_r0.1_seed1_K5.json",
+    "sha256": "53add2738a497b812a28a4d252013f64c913cf30dad393c45ddeb3ffd9698da1"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed1_K5/ckpt_0.pt",
+      "sha256": "a515662ff57bacd78b5fa0f85d86c9c3dc3979617f8802dede86ac84f221d4a4"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed1_K5/ckpt_1.pt",
+      "sha256": "064b81a036d5eb40bfda4e3669fcdca8a9566f0ed9aaf1396e737cd39ced6db6"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed1_K5/ckpt_2.pt",
+      "sha256": "3e7336cf037904af95af4036a3f815b704396ceac19f608b9c9016689eac2b6d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed1_K5/ckpt_3.pt",
+      "sha256": "8f279f4ef4b3bff118d37299496e233814b873818ec11319caf1379ef8e6a460"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed1_K5/ckpt_4.pt",
+      "sha256": "cdfa68c43d632a8eaca1ad0ded522da56db02d1833fdd2275430a20ae04a29df"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quarT_seed1_K5/ckpt_0.pt",
+      "sha256": "f2d5aa79c7d8c57588bf104b29e17f8fbf878717e9083a910dd0d29e68d24409"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quarT_seed1_K5/ckpt_1.pt",
+      "sha256": "687d6e398b948fd49bf520f4cae02833c61729fd229bbe63f6eeea532f83496b"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quarT_seed1_K5/ckpt_2.pt",
+      "sha256": "2eab7376c178439a8bfe106a1ac44d0350b042dacc2413be11400ace05ccb6e6"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quarT_seed1_K5/ckpt_3.pt",
+      "sha256": "b8f34517312bba137c7a4451d83149120259a287134e01f20145e33f5bf7957d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quarT_seed1_K5/ckpt_4.pt",
+      "sha256": "847d3fee22b329c447b3d7f1f33cfb00edc4b291a1c2d1bb65563e1f5a0f15af"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quar_seed1_K5/ckpt_0.pt",
+      "sha256": "38aad1243f9261653a5d9830f2a55e9c2bc6871491016ac7485714468a0154bd"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quar_seed1_K5/ckpt_1.pt",
+      "sha256": "7601913d4ed591c43ed2a0efb351e1b8260b06a932a9c40638dae594c095b4b0"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quar_seed1_K5/ckpt_2.pt",
+      "sha256": "7853459cf025180815073cd6731ee33a88d7eca25fcb831fe3f399af3a34e131"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quar_seed1_K5/ckpt_3.pt",
+      "sha256": "9d33059ef85da53090188e89483b9bbf785ae5f28cdabfff81f52e94cbad983f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_quar_seed1_K5/ckpt_4.pt",
+      "sha256": "d6aa8eb2961be49197357c182d510f60ba8309e6e359cfe8287cfcb507e0906f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_seed1_K5/ckpt_0.pt",
+      "sha256": "076f1e06c31a34a9f753f169a03023c7e64d02fdee4b588c199939129bdbc4f3"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_seed1_K5/ckpt_1.pt",
+      "sha256": "712fa4748997e27817b78365ff26f31c5526d1dc53154280485ff0703412e5d7"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_seed1_K5/ckpt_2.pt",
+      "sha256": "3374aa01eb9a2673cf79d5c6d8f68ea82a4bb2c24fd1c18d86c95c5c578a1d4e"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_seed1_K5/ckpt_3.pt",
+      "sha256": "5e39377e0879c05c302dd10950c15384297d1b315f6fb2979f7c5aa1eb40a696"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.1_seed1_K5/ckpt_4.pt",
+      "sha256": "11622c853d188db1578839727fb840717e0bfb9e3b395674a853e687a5ae2bdd"
+    }
+  ]
+}

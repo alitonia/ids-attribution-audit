@@ -1,0 +1,100 @@
+{
+  "cell": "cic_feature_perturb_r0.1_seed0",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T09:59:54.335537+00:00",
+  "wall_s": 134.1,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_feature_perturb_r0.1_seed0_K5.json",
+    "sha256": "12f9fca1d651e5d02b89743a197cc6d70edc94876ecd39f06a5d7131af75fce7"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_0.pt",
+      "sha256": "29688694811aa7800ba2bcbc370e6896046c4d46ea1b77e2ff51c90c71ee053a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_1.pt",
+      "sha256": "28d99cda8aacfbba0c060444a9322b487a5216e1de228cccb8ecb6e8f6e62489"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_2.pt",
+      "sha256": "0a324422579aa17371cee3513a8250f2f78b9d5762f653c9aaed535aa6448c32"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_3.pt",
+      "sha256": "f826fc973787036ab0388a68cf697c3727435225d3da94971296dd5e1161e237"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed0_K5/ckpt_4.pt",
+      "sha256": "714f8dd4e96e872bed4f9f65d5f55bd31e8532023d6568be492af1fa83ebabe1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quarT_seed0_K5/ckpt_0.pt",
+      "sha256": "919f000d9fcd8c06c61d9e5e88f44ba3e92e2205b83cb0f07b40c86bf3948c8f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quarT_seed0_K5/ckpt_1.pt",
+      "sha256": "434ba2ca230c9b3ccfedce7348798c72c00a0853338be6dcdd12fbcab9f32deb"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quarT_seed0_K5/ckpt_2.pt",
+      "sha256": "159e184d5cc3d24f9ed6f73c2cf87d865e709bff140ad61bb3d1e1ffceb029d2"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quarT_seed0_K5/ckpt_3.pt",
+      "sha256": "9df0a1889f70196f6b1d8e5238e063045a8e785f62265af01f8d49e3d4231839"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quarT_seed0_K5/ckpt_4.pt",
+      "sha256": "9b8488123cb56e042e64386942e78c9c4b75928521a570f095e212ea12e8b5f6"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quar_seed0_K5/ckpt_0.pt",
+      "sha256": "109cd6a110372e370853cc510f03b00d2f2f344cd98f963b3c4364723aeaac3a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quar_seed0_K5/ckpt_1.pt",
+      "sha256": "94f682c0b60c07e811c6476115806836049c4819623da2de3821e413f75adcaa"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quar_seed0_K5/ckpt_2.pt",
+      "sha256": "634337eb32cbcd38972f35246069ce5403700c1662e51275d408ceeb114699a1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quar_seed0_K5/ckpt_3.pt",
+      "sha256": "5627c111ec283f063e260945bf68b7ac8974c7c44fc3e866c02678d6352034b9"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_quar_seed0_K5/ckpt_4.pt",
+      "sha256": "129a1810f0ef5bff4ad903696f8d603bf8a20ffdf9706150f88a98aa412b924a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_seed0_K5/ckpt_0.pt",
+      "sha256": "ce04edce4dcc5c036621837ab67065d339f3088ec84003628e4bd4c108658429"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_seed0_K5/ckpt_1.pt",
+      "sha256": "f71c8a061c5951fa60a42ce1c903b30a98bbac3b63af76e4a6eee064f1b101c3"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_seed0_K5/ckpt_2.pt",
+      "sha256": "50b9f554486ca8ac310aee7fda6ca80a1480407f7431e1b741a74d1f95b2eb31"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_seed0_K5/ckpt_3.pt",
+      "sha256": "32c2c5966d0db233a52ec475f94b01d4ab1ae1d7f4a8880ae14e84910824d46d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_feature_perturb_r0.1_seed0_K5/ckpt_4.pt",
+      "sha256": "df23ee25a62fa6807cecac6f638d59f08243571ef19b0a3713f91b6ce1964c5b"
+    }
+  ]
+}

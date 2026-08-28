@@ -1,0 +1,18 @@
+{
+ "cell": "cic_label_flip_r0.05_seed0",
+ "n": 16384,
+ "p": 18177,
+ "spectrum": {
+  "effective_rank": 1.9,
+  "top10_share": 0.9547,
+  "mass_beyond_top1024": 0.0
+ },
+ "norm_tail_p99_over_median": 13.81,
+ "cosines": {
+  "within_poison": 0.7617,
+  "within_clean": 0.4975,
+  "poison_vs_clean": -0.091
+ },
+ "signal_share_of_variance": 0.812603,
+ "minutes_total": 0.5
+}

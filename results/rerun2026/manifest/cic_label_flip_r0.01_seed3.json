@@ -1,0 +1,100 @@
+{
+  "cell": "cic_label_flip_r0.01_seed3",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T09:55:18.550421+00:00",
+  "wall_s": 138.5,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_label_flip_r0.01_seed3_K5.json",
+    "sha256": "cfc9b185e5f67e1bd9a891ee24e497916394d348dbdba868135da308bcb9965c"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_0.pt",
+      "sha256": "ae4af4d534e80cde68dc34fa5e24f56532987477ddab1703231cb0973fac14f4"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_1.pt",
+      "sha256": "775ba9be78f4d067bbcfd9dddcc451220290975e050ba7d89c5b93a06d21c850"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_2.pt",
+      "sha256": "447a1379bef7e7eba5e67c592c1e8fc1bfa6f0a5d0f2f07eee7162f1b3503804"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_3.pt",
+      "sha256": "09084e80dd1cd150b8ce0c75a0453e2e968432a05a5c91c1b6e19f0aa451444f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed3_K5/ckpt_4.pt",
+      "sha256": "95316b783e8b5425044787f95e665bc90d6d62577c47531dae91e8bdf164ee1d"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quarT_seed3_K5/ckpt_0.pt",
+      "sha256": "95d7017eb1fd0761922159b6d962eda35bf81a3c165abcbb5871a4a90975fcef"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quarT_seed3_K5/ckpt_1.pt",
+      "sha256": "4f491f06f33735ce10ea8703123479027298404384cd5a30c02d58b18d8c11cf"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quarT_seed3_K5/ckpt_2.pt",
+      "sha256": "2646ebed5a3ad6e2faeb844f30d435890840938214f6d8e31992f59e989fc919"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quarT_seed3_K5/ckpt_3.pt",
+      "sha256": "b2f846e9d1076362662b33b1248d118523ba607c28a4a7cde841f9cea9b41eb2"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quarT_seed3_K5/ckpt_4.pt",
+      "sha256": "98e733f55b8b9aa4b3900b5ff84d84da20239696237fc9a14356a0a995a50b89"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quar_seed3_K5/ckpt_0.pt",
+      "sha256": "00239097487d78d9775bcf6ed1df48b6b05330f5595c0f7c22ca1bcbc77a0cad"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quar_seed3_K5/ckpt_1.pt",
+      "sha256": "33d61925d4fbf40aa73a47401aa53389abc02477cc83a42b02aab68fe99103b4"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quar_seed3_K5/ckpt_2.pt",
+      "sha256": "2e10185cedcf9683c6afb2890c887b3d950b9a18cc456ee0620b67932e46aba9"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quar_seed3_K5/ckpt_3.pt",
+      "sha256": "932d77c0a6ec9511a58515e3e031ae5ee062669d1ed83275c4f83d7487fc2c69"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_quar_seed3_K5/ckpt_4.pt",
+      "sha256": "81a24bb26b97b1458360d8cc951794e618b601fe212a49750401a7b305d24884"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_seed3_K5/ckpt_0.pt",
+      "sha256": "be9b9c462c2ba3bc4b7fbc7965545b3175f2973dc137c3263ffb5e3531777859"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_seed3_K5/ckpt_1.pt",
+      "sha256": "4b98d4af85e0dcefe276fbda3b134064634be9a283adde387b97596d4dfdd943"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_seed3_K5/ckpt_2.pt",
+      "sha256": "65e0a21edf74740c9bc363ec75d9aa2ac484e70571c4ba6edbdcfd8a9dd6b94f"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_seed3_K5/ckpt_3.pt",
+      "sha256": "99aeba9aa1828681f74bc6f7cd3f5f45f43495c3b3c7c57d5d424efa3b472286"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.01_seed3_K5/ckpt_4.pt",
+      "sha256": "3a8c6b15a673acda309b7b8ffce5bba5c7ced0763203d200f534d910d11ed60b"
+    }
+  ]
+}

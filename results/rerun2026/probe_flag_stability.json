@@ -1,0 +1,50 @@
+{
+ "cell": "cic_label_flip_r0.05_seed0",
+ "n_train": 313541,
+ "n_poison": 15677,
+ "variants": {
+  "A_p1024_s0": {
+   "proj_dim": 1024,
+   "projector_seed": 0,
+   "auroc": 0.8906802617152036,
+   "flag_precision": 0.7101185050136737,
+   "n_flagged": 7679,
+   "poison_recall_at_flags": 0.34783440709319385,
+   "minutes": 2.2
+  },
+  "B_p2048_s0": {
+   "proj_dim": 2048,
+   "projector_seed": 0,
+   "auroc": 0.07259993561077968,
+   "flag_precision": 0.44602048857368004,
+   "n_flagged": 1269,
+   "poison_recall_at_flags": 0.036103846399183515,
+   "minutes": 4.2
+  },
+  "C_p1024_s7": {
+   "proj_dim": 1024,
+   "projector_seed": 7,
+   "auroc": 0.1548157476499629,
+   "flag_precision": 0.541958041958042,
+   "n_flagged": 1144,
+   "poison_recall_at_flags": 0.03954838298143778,
+   "minutes": 2.2
+  }
+ },
+ "cross_variant": {
+  "A_p1024_s0_vs_B_p2048_s0": {
+   "flag_agreement": 0.9741851942808117,
+   "poison_jaccard": 0.03490371389270976
+  },
+  "A_p1024_s0_vs_C_p1024_s7": {
+   "flag_agreement": 0.974985727544404,
+   "poison_jaccard": 0.057093124456048736
+  },
+  "B_p2048_s0_vs_C_p1024_s7": {
+   "flag_agreement": 0.9933118794671192,
+   "poison_jaccard": 0.09611829944547134
+  }
+ },
+ "auroc_spread": 0.8180803261044239,
+ "minutes_total": 8.8
+}

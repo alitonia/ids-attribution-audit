@@ -1,0 +1,100 @@
+{
+  "cell": "cic_label_flip_r0.02_seed4",
+  "env": {
+    "run_id": "rerun2026_20260828",
+    "git_rev": "9c142dcd7122953348eb97ff880114498f58324a",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "deterministic": true,
+    "cublas_workspace": ":4096:8",
+    "host": "630b9123b6c5"
+  },
+  "when": "2026-08-28T09:57:39.919056+00:00",
+  "wall_s": 150.5,
+  "result": {
+    "path": "/workspace/results_rerun/exp_cic_label_flip_r0.02_seed4_K5.json",
+    "sha256": "b26014f20c8d9ac60147d0ef48baa3e1e3823e9578f425ce27e038ae19acfbb5"
+  },
+  "checkpoints": [
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_0.pt",
+      "sha256": "ef5cdfae33cb8339039a13678424843287505e378c65eed9ef27f11a5b0d7c57"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_1.pt",
+      "sha256": "b992d99ee073cc45d2df44ce9ddd69c63335f9fa1850b029a4e6a482165f3e01"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_2.pt",
+      "sha256": "ba1abd6a76b225198ca55aecc91405a5459c9e32f364e55352dd94aab2e74dce"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_3.pt",
+      "sha256": "89bbb530915c9de13c7db2e8cfac57aa7c85784cfa8ee0ed72e02144f8f641c1"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_clean_seed4_K5/ckpt_4.pt",
+      "sha256": "c898ee7acde2c2c49975aa545d6e7d8fb079f5b17180c26a842db5e0736bf947"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed4_K5/ckpt_0.pt",
+      "sha256": "585c44213d73202363c87f49ebf41c50a407494b87551bc112f924f737a851d0"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed4_K5/ckpt_1.pt",
+      "sha256": "83a5add1811f08a8f8a062861f5f0e52e7ac2ace3628f813980927eea86d33c9"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed4_K5/ckpt_2.pt",
+      "sha256": "eb77abd0460e68cd946e6cf04f6363327a9e9faea0a2912c728d32572d51890c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed4_K5/ckpt_3.pt",
+      "sha256": "54663ec36b91b0e1af438bd92dff5d8e9d5bcbe29944369d6142328694f8362c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quarT_seed4_K5/ckpt_4.pt",
+      "sha256": "73f3f43ed4b766053b02988ee2ea84aa464cdae93fa1d65833e33257c4bc4251"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed4_K5/ckpt_0.pt",
+      "sha256": "049149e7348c8109bcc1f2316db7bc4ca58f1556cc043e311633503094b9b56c"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed4_K5/ckpt_1.pt",
+      "sha256": "61eeba2e5b098bcce8f1ec5f52ab7706669bbb08b0ca0506f991822e8c08de65"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed4_K5/ckpt_2.pt",
+      "sha256": "a7b963f1935741faf11473cb52a53af3bc114ae76e5043335c17d1859075f225"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed4_K5/ckpt_3.pt",
+      "sha256": "6609d5dc2f333fc4232ab9a6467ac2456ab13d7a76873e62b7f68206869d9be2"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_quar_seed4_K5/ckpt_4.pt",
+      "sha256": "a66f4a7cd57e349884a07149eb33184510a7c52157e71b8af2f4c35025580142"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed4_K5/ckpt_0.pt",
+      "sha256": "ac220e907dd35110201a9a5b44fa13bcb3c6c450aa7ceead666bbd38dadd5f45"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed4_K5/ckpt_1.pt",
+      "sha256": "666a8e9b48073cb47951638ca17789717dbf734f77a98f3ae006692e48a636cd"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed4_K5/ckpt_2.pt",
+      "sha256": "86b859778446aa3ade75180d48e7294da28d73e5a66737e949d0b0fb2aeb6337"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed4_K5/ckpt_3.pt",
+      "sha256": "3b012024d0ada500b853dbc611482407cd03e3f125835db6e8956e7776b48e7a"
+    },
+    {
+      "path": "/workspace/ckpt_v2/cic_label_flip_r0.02_seed4_K5/ckpt_4.pt",
+      "sha256": "bf76003062a9f25802b83eae5ec12381d04e0b8481ccbf5b411a08842a42446d"
+    }
+  ]
+}
