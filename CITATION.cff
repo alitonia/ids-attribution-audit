@@ -1,4 +1,4 @@
-cff-version: 1.1.0
+cff-version: 1.1.1
 title: "Auditing Poisoned Training Data for Intrusion Detection Systems: An Influence-Based Attribution Approach for IoT Network Security (artifact)"
 message: >-
   If you use this software or data, please cite the paper below.
@@ -12,7 +12,7 @@ identifiers:
     type: doi
     value: 10.5281/zenodo.22035732
 repository-code: https://github.com/alitonia/ids-attribution-audit
-version: 1.1.0
+version: 1.1.1
 date-released: "2026-08-21"
 license: MIT
 preferred-citation:

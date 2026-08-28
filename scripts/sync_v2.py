@@ -121,7 +121,7 @@ def main():
                     continue
                 vs.append(loc["auroc"])
             vals.append(f"{np.mean(vs):.3f}" if vs else "--")
-        t2.append(f"{dname} & " + " & ".join(vals) + " & 1.000 \\\\")
+        t2.append(f"{dname} & " + " & ".join(vals) + " \\\\")
     with open(OUT / "baseline_table_v2.tex", "w") as f:
         f.write("\n".join(t2) + "\n")
 

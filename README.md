@@ -64,3 +64,12 @@ archives from the release assets). v1.0.0 numbers are preserved under
 `results/v1.0.0/`. Headline deltas vs v1.0.0: fp AUROC floor 0.836->0.835,
 a partial threshold collapse at rho=5% (previously only at 10%), two-sided
 trigger flagging does not recover the family (0.004), held-out FPR <= 1.04%.
+
+
+## Regeneration
+
+The paper's tables/figures regenerate from `results/rerun2026/` via
+`python3 scripts/sync_v2.py` (single derivation point; see
+`results/rerun2026/HEADLINE_NUMBERS.json`). The root `aggregate_latex.py` /
+`generate_figures.py` are the v1.0.0 (three-seed) generators, kept for
+provenance only — do not run them against `results/rerun2026/`.

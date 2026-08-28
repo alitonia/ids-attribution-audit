@@ -16608,6 +16608,44 @@
         "paper/fig_rs_radii.pdf": "bcd8732910b42ed3de28fdba252b2709f0288fa56267aa288f1e3b3fb2591f0e",
         "paper/edas_submission.md": "4d3924c361ab9f54a257014045c04b95f7b79bfd628b49eec7271b383c4a47d2"
       }
+    },
+    {
+      "sealed_at": "2026-08-28T16:39:56.905278+00:00",
+      "git_rev": "51debcfa5819dc788c6ac42a853a3a915d046d80",
+      "artifacts": {
+        "results/rerun2026/HEADLINE_NUMBERS.json": "83a1c539563068f21d0e329d871860e99aace4b807afd4532c9718092604b6e8",
+        "results/rerun2026/TABLES_INPUT.json": "16134b1802ee4d37d49b3346dee069da419828c77941db95d2dcd01eb4c29736",
+        "results/rerun2026/tables/results_table_v2.tex": "3cff291266889e4e2a556ba3c610d4736a617a06ecd8962a57061f86b2e9eabf",
+        "results/rerun2026/tables/rs_radii_table_v2.tex": "4dbcd5b42906a9f09f1b7de968df90cb0f29c2c33ef7e8654a051225f775859f",
+        "results/rerun2026/tables/baseline_table_v2.tex": "f56a27a51de2f00671fff13783ca2c92fc6c82b4e6714b4a0748f80ac44d641b",
+        "results_table.tex": "002b0be189135aff653b96ce1a8514b0a94df8d6e03e07ce7c7456cb3561e12b",
+        "baseline_table.tex": "a27cede1e3fb5ad1f6fc8516813dda48cd14b328eeac4e1c0dec5ace766f049c",
+        "rs_radii_table.tex": "ccb5bfea737895ca06103acfbb38024c9486d01e5c2801daba275f0059c81e81",
+        "paper/main.tex": "6195898d1798ad5d039d7f16401ca71c581f7693e374549967598b15659ee901",
+        "paper/main.pdf": "1b4c7c476bec8af4f53ee87ae782e15f01bfe35d0d73f44b6c94061d66262026",
+        "paper/fig_auroc.pdf": "e223129409daa976b3cd54a95607801fe6a408ed387009a3677b77b176f304fa",
+        "paper/fig_rs_radii.pdf": "bcd8732910b42ed3de28fdba252b2709f0288fa56267aa288f1e3b3fb2591f0e",
+        "paper/edas_submission.md": "4d3924c361ab9f54a257014045c04b95f7b79bfd628b49eec7271b383c4a47d2"
+      }
+    },
+    {
+      "sealed_at": "2026-08-28T17:15:08.221968+00:00",
+      "git_rev": "16d081eb726eba2a6a980fb3c2d56f175ba12892",
+      "artifacts": {
+        "results/rerun2026/HEADLINE_NUMBERS.json": "83a1c539563068f21d0e329d871860e99aace4b807afd4532c9718092604b6e8",
+        "results/rerun2026/TABLES_INPUT.json": "16134b1802ee4d37d49b3346dee069da419828c77941db95d2dcd01eb4c29736",
+        "results/rerun2026/tables/results_table_v2.tex": "3cff291266889e4e2a556ba3c610d4736a617a06ecd8962a57061f86b2e9eabf",
+        "results/rerun2026/tables/rs_radii_table_v2.tex": "4dbcd5b42906a9f09f1b7de968df90cb0f29c2c33ef7e8654a051225f775859f",
+        "results/rerun2026/tables/baseline_table_v2.tex": "0544b805d5f8e471b1f3ad13df0ff27eb022008aa259e034bffd6d3cdd67e67a",
+        "results_table.tex": "69f5006a9f9d30eea7689aab2d089b0c357345d65013310740420096a7ed331e",
+        "baseline_table.tex": "84db5df344de525cb9b05e58a782e9bfa2718039bad1064fd68ee7273a22f8cb",
+        "rs_radii_table.tex": "ccb5bfea737895ca06103acfbb38024c9486d01e5c2801daba275f0059c81e81",
+        "paper/main.tex": "ac6ceaa4515c7ace157b7132a0134c8c2d22267b6c87c0974f0bcdd544e6d898",
+        "paper/main.pdf": "21264c1a653d920783d8a0ad0f781ed9974e83c177384900d76dcc7c7ef47bc2",
+        "paper/fig_auroc.pdf": "e223129409daa976b3cd54a95607801fe6a408ed387009a3677b77b176f304fa",
+        "paper/fig_rs_radii.pdf": "bcd8732910b42ed3de28fdba252b2709f0288fa56267aa288f1e3b3fb2591f0e",
+        "paper/edas_submission.md": "d0b3051e23c9eaea5a09aaa7d82984f2144238bc81b43dd50e85554c536b9d9c"
+      }
     }
   ]
 }
